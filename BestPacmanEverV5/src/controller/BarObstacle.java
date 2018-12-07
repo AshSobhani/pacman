@@ -25,7 +25,7 @@ public class BarObstacle extends Rectangle {
             this.setHeight(length * BarObstacle.THICKNESS);
             this.setWidth(BarObstacle.THICKNESS);
         }
-        this.setFill(Color.CADETBLUE);
-        this.setStrokeWidth(3);
+        this.setFill(Color.rgb(0, 60, 183));
+//        this.setStrokeWidth(3);
     }
 }

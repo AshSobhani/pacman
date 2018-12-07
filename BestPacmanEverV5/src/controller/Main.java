@@ -18,7 +18,7 @@ public class Main extends Application {
         theStage.setTitle( "Pacman" );
 
         Group root = new Group();
-        Scene theScene = new Scene( root , Color.rgb(56, 56, 56));
+        Scene theScene = new Scene( root , Color.rgb(25, 25, 25));
         theStage.setScene( theScene );
 
         Canvas canvas = new Canvas( 1225, 600 );

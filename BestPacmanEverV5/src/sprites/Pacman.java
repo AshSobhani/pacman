@@ -1,5 +1,6 @@
 package sprites;
 
+import javafx.scene.input.KeyEvent;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Circle;
@@ -10,7 +11,7 @@ import java.awt.*;
 public class Pacman extends Circle {
 
     public Pacman(double x, double y) {
-        Image pacPic = new Image("file:BestPacmanEverV5/src/resources/pacman.png");
+        Image pacPic = new Image("file:BestPacmanEverV5/resources/pacman.png");
 
         this.setCenterX(x);
         this.setCenterY(y);

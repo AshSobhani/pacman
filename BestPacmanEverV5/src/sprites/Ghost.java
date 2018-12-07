@@ -6,7 +6,6 @@ import controller.GameManager;
 import controller.Maze;
 import javafx.animation.AnimationTimer;
 import javafx.scene.image.Image;
-import javafx.scene.paint.Color;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Rectangle;
 
@@ -28,7 +27,7 @@ public class Ghost extends Rectangle implements Runnable {
         this.maze = maze;
         this.gameManager = gameManager;
         this.setHeight(50);
-        this.setWidth(46);
+        this.setWidth(47.5);
         this.setFill(new ImagePattern(ghostPic, 0, 0, 1, 1, true));
         this.timesWalked = 0;
         this.direction = "down";
@@ -172,7 +171,7 @@ public class Ghost extends Rectangle implements Runnable {
                 double bottomEdge = getY() + getHeight();
                 double padding = 12;
                 timesWalked++;
-                int walkAtLeast = 4;
+                int walkAtLeast = 5;
                 switch (direction) {
                     case "left":
                         moveUntilYouCant("left", "down", leftEdge, topEdge, rightEdge, bottomEdge, padding);
