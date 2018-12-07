@@ -14,8 +14,8 @@ public class Cookie extends Circle {
         this.value = 5;
         this.setCenterX(x);
         this.setCenterY(y);
-        this.setRadius(12.5);
-        this.setFill(Color.SADDLEBROWN);
+        this.setRadius(9);
+        this.setFill(Color.rgb(214, 190, 36));
     }
 
     public int getValue() {
