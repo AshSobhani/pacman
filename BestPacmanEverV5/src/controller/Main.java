@@ -7,6 +7,7 @@ import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 public class Main extends Application {
@@ -17,7 +18,7 @@ public class Main extends Application {
         theStage.setTitle( "Pacman" );
 
         Group root = new Group();
-        Scene theScene = new Scene( root );
+        Scene theScene = new Scene( root , Color.rgb(56, 56, 56));
         theStage.setScene( theScene );
 
         Canvas canvas = new Canvas( 1225, 600 );

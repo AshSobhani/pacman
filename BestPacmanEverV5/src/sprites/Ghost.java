@@ -28,7 +28,7 @@ public class Ghost extends Rectangle implements Runnable {
         this.maze = maze;
         this.gameManager = gameManager;
         this.setHeight(50);
-        this.setWidth(50);
+        this.setWidth(46);
         this.setFill(new ImagePattern(ghostPic, 0, 0, 1, 1, true));
         this.timesWalked = 0;
         this.direction = "down";
