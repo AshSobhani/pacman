@@ -1,9 +1,13 @@
-package sample;
+package sprites;
 
 
 
+import controller.GameManager;
+import controller.Maze;
 import javafx.animation.AnimationTimer;
 import javafx.scene.paint.Color;
+import javafx.scene.image.Image;
+import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Rectangle;
 
 import java.util.Random;
@@ -18,6 +22,7 @@ public class Ghost extends Rectangle implements Runnable {
     int timesWalked;
 
     public Ghost(double x, double y, Color color, Maze maze, GameManager gameManager) {
+
         this.setX(x);
         this.setY(y);
         this.maze = maze;

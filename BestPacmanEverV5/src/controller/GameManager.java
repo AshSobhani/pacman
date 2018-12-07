@@ -1,4 +1,4 @@
-package sample;
+package controller;
 
 
 
@@ -8,6 +8,9 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
+import sprites.Cookie;
+import sprites.Ghost;
+import sprites.Pacman;
 
 import java.util.Arrays;
 import java.util.HashSet;
