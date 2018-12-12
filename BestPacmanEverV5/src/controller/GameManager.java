@@ -116,7 +116,7 @@ public class GameManager {
      * Draws the board of the game with the cookies and the Pacman
      */
     public void drawBoard() {
-        this.maze.CreateMaze(root, "BestPacmanEverV5/resources/maps/Level1.txt");
+        this.maze.CreateMaze(root, "BestPacmanEverV5/src/resources/maps/Level1.txt");
 
         root.getChildren().add(this.pacman);
 //        this.generateGhosts();

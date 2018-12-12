@@ -29,7 +29,7 @@ public class Maze {
     private Set<Ghost> ghosts;
     private GameManager gameManager;
 
-    private String[] ghostSprites = new String[]{"file:BestPacmanEverV5/resources/ghost1.png", "file:BestPacmanEverV5/resources/ghost2.png", "file:BestPacmanEverV5/resources/ghost3.png", "file:BestPacmanEverV5/resources/ghost4.png"};
+    private String[] ghostSprites = new String[]{"file:BestPacmanEverV5/src/resources/ghost1.png", "file:BestPacmanEverV5/src/resources/ghost2.png", "file:BestPacmanEverV5/src/resources/ghost3.png", "file:BestPacmanEverV5/src/resources/ghost4.png"};
 
     Maze(GameManager gameManager) {
         obstacles = new HashSet<>();

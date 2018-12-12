@@ -11,7 +11,7 @@ import java.awt.*;
 public class Pacman extends Circle {
 
     public Pacman(double x, double y) {
-        Image pacPic = new Image("file:BestPacmanEverV5/resources/pacman.png");
+        Image pacPic = new Image("file:BestPacmanEverV5/src/resources/pacman.png");
 
         this.setCenterX(x);
         this.setCenterY(y);

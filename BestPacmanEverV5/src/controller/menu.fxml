@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <children>
+      <AnchorPane prefHeight="720" prefWidth="1225" style="-fx-background-color: black;">
+         <children>
+            <Button layoutX="472.0" layoutY="355.0" mnemonicParsing="false" onAction="#startClassic" prefHeight="51.0" prefWidth="281.0" style="-fx-background-color: #ffd700;" text="Classic Game">
+               <font>
+                  <Font name="Avenir Next Heavy" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <ImageView fitHeight="132.0" fitWidth="516.0" layoutX="355.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/title.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="472.0" layoutY="437.0" mnemonicParsing="false" onAction="#customGame" prefHeight="51.0" prefWidth="281.0" style="-fx-background-color: cyan;" text="Custom Game">
+               <font>
+                  <Font name="Avenir Next Heavy" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button layoutX="472.0" layoutY="518.0" mnemonicParsing="false" onAction="#leaderboard" prefHeight="51.0" prefWidth="281.0" style="-fx-background-color: #ff3f30;" text="Leaderboard">
+               <font>
+                  <Font name="Avenir Next Heavy" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children></AnchorPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
