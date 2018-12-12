@@ -16,10 +16,10 @@ public class Score {
         this.score = new Text(BarObstacle.THICKNESS * 4, BarObstacle.THICKNESS * 28, "Score: 0");
         this.lifes = new Text(BarObstacle.THICKNESS * 20, BarObstacle.THICKNESS * 28,"Lifes: 3");
         score.setFill(Color.MAGENTA);
-        score.setFont(Font.font("Arial", 30));
+        this.score.setFont(Font.font("Avenir Next Heavy", 30));
 
         lifes.setFill(Color.MAROON);
-        lifes.setFont(Font.font("Arial", 30));
+        this.lifes.setFont(Font.font("Avenir Next Heavy", 30));
 
         root.getChildren().add(score);
         root.getChildren().add(lifes);

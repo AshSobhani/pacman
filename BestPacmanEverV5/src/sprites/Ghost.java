@@ -172,6 +172,14 @@ public class Ghost extends Rectangle implements Runnable {
                 double padding = 12;
                 timesWalked++;
                 int walkAtLeast = 5;
+
+                if (getX() < -5) {
+                    setX(1230);
+                }
+                if (getX() > 1220) {
+                    setX(-5);
+                }
+
                 switch (direction) {
                     case "left":
                         moveUntilYouCant("left", "down", leftEdge, topEdge, rightEdge, bottomEdge, padding);

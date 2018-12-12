@@ -33,11 +33,12 @@ public class GameManager {
     private Score scoreBoard;
     private boolean gameEnded;
     private int cookiesEaten;
+    private String map;
 
     /**
      * Constructor
      */
-    GameManager(Group root) {
+    GameManager(Group root, String map) {
         this.root = root;
         this.maze = new Maze(this);
         this.pacman = new Pacman(2.5 * BarObstacle.THICKNESS, 2.5 * BarObstacle.THICKNESS);
@@ -50,6 +51,7 @@ public class GameManager {
         this.lifes = 3;
         this.score = 0;
         this.cookiesEaten = 0;
+        this.map = map;
     }
 
     /**
@@ -86,7 +88,7 @@ public class GameManager {
         javafx.scene.text.Text endGame = new javafx.scene.text.Text("Game Over, press ESC to restart");
         endGame.setX(BarObstacle.THICKNESS * 3);
         endGame.setY(BarObstacle.THICKNESS * 28);
-        endGame.setFont(Font.font("Arial", 40));
+        endGame.setFont(Font.font("Avenir Next Heavy", 40));
         endGame.setFill(Color.ROYALBLUE);
         root.getChildren().remove(this.scoreBoard.score);
         root.getChildren().remove(this.scoreBoard.lifes);
@@ -116,7 +118,7 @@ public class GameManager {
      * Draws the board of the game with the cookies and the Pacman
      */
     public void drawBoard() {
-        this.maze.CreateMaze(root, "BestPacmanEverV5/src/resources/maps/Level1.txt");
+        this.maze.CreateMaze(root, "BestPacmanEverV5/src/resources/maps/" + map);
 
         root.getChildren().add(this.pacman);
 //        this.generateGhosts();
@@ -184,6 +186,12 @@ public class GameManager {
         {
             public void handle(long currentNanoTime)
             {
+                if (pacman.getCenterX() < -5) {
+                    pacman.setCenterX(1230);
+                }
+                if (pacman.getCenterX() > 1230) {
+                    pacman.setCenterX(-5);
+                }
             switch (direction) {
                 case "left":
                     if (!maze.isTouching(pacman.getCenterX() - pacman.getRadius(), pacman.getCenterY(), 15)) {
@@ -191,6 +199,7 @@ public class GameManager {
                         checkCookieCollection(pacman, "x");
                         checkGhostCoalition();
                     }
+
                     break;
                 case "right":
                     if (!maze.isTouching(pacman.getCenterX() + pacman.getRadius(), pacman.getCenterY(), 15)) {
@@ -272,6 +281,7 @@ public class GameManager {
                     cookie.hide();
                 }
             }
+            this.scoreBoard.score.setFont(Font.font("Avenir Next Heavy", 30));
             this.scoreBoard.score.setText("Score: " + this.score);
             if (this.cookiesEaten == maze.getCookies().size()) {
                 this.endGame();

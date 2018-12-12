@@ -15,16 +15,14 @@ import java.util.Set;
 
 public class Maze {
 
-    private Set<BarObstacle> obstacles;
-
     public Set<Cookie> getCookies() {
         return cookies;
     }
-
     public Set<Ghost> getGhosts() {
         return ghosts;
     }
 
+    private Set<BarObstacle> obstacles;
     private Set<Cookie> cookies;
     private Set<Ghost> ghosts;
     private GameManager gameManager;
