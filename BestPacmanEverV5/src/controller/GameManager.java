@@ -129,6 +129,7 @@ public class GameManager {
 
     /**
      * Moves the pacman
+     * Moves constantly until either a obstacle is hit or user changes PacMans direction
      * @param event
      */
     public void movePacman(KeyEvent event) {
