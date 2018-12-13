@@ -1,13 +1,15 @@
-package controller;
+package controllers;
 
 
 
 import javafx.animation.AnimationTimer;
+import javafx.event.ActionEvent;
 import javafx.scene.Group;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
+import javafx.stage.Stage;
 import sprites.Cookie;
 import sprites.Ghost;
 import sprites.Pacman;
@@ -27,11 +29,15 @@ public class GameManager {
     private boolean gameEnded;
     private int cookiesEaten;
     private String map;
+    private SoundController pacSound;
+    private GameController game;
 
     /**
      * Constructor
      */
     GameManager(Group root, String map) {
+        this.pacSound = new SoundController();
+        this.game = new GameController();
         this.root = root;
         this.maze = new Maze(this);
         this.pacman = new Pacman(2.5 * BarObstacle.THICKNESS, 2.5 * BarObstacle.THICKNESS);
@@ -49,6 +55,7 @@ public class GameManager {
      * Set one life less
      */
     private void lifeLost() {
+        pacSound.playPacDeath();
         this.leftPacmanAnimation.stop();
         this.rightPacmanAnimation.stop();
         this.upPacmanAnimation.stop();
@@ -76,10 +83,10 @@ public class GameManager {
         for (Ghost ghost : maze.getGhosts()) {
             root.getChildren().remove(ghost);
         }
-        javafx.scene.text.Text endGame = new javafx.scene.text.Text("Game Over, press ESC to restart");
+        javafx.scene.text.Text endGame = new javafx.scene.text.Text("Finished! Press ESC to Restart or SPACE for Menu");
         endGame.setX(BarObstacle.THICKNESS * 3);
         endGame.setY(BarObstacle.THICKNESS * 28);
-        endGame.setFont(Font.font("Avenir Next Heavy", 40));
+        endGame.setFont(Font.font("Avenir Next Heavy", 30));
         endGame.setFill(Color.ROYALBLUE);
         root.getChildren().remove(this.scoreBoard.score);
         root.getChildren().remove(this.scoreBoard.lifes);
@@ -103,6 +110,13 @@ public class GameManager {
             this.cookiesEaten = 0;
             gameEnded = false;
         }
+        if (event.getCode() == KeyCode.SPACE && gameEnded) {
+            try {
+                game.backToMain(event);
+            } catch (Exception Failed) {
+                System.out.print("Failed To Load Menu");
+            };
+        }
     }
 
     /**
@@ -110,6 +124,7 @@ public class GameManager {
      */
     public void drawBoard() {
         this.maze.CreateMaze(root, "BestPacmanEverV5/src/resources/maps/" + map);
+        pacSound.playPacStart();
 
         root.getChildren().add(this.pacman);
         this.pacman.placePacMan();

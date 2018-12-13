@@ -1,4 +1,4 @@
-package controller;
+package controllers;
 
 import java.io.IOException;
 import javafx.application.Platform;
@@ -13,8 +13,7 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.paint.Color;
 import sprites.Cookie;
 
-public class Controller {
-
+public class GameController {
     public ColorPicker mazeColour;
     public ColorPicker backgroundColour;
     public ColorPicker cookieColour;
@@ -51,6 +50,12 @@ public class Controller {
         Platform.exit();
         System.exit(0);
 
+    }
+
+    public void backToMain(KeyEvent e) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("../views/menu.fxml"));
+        Scene theScene = (Scene) e.getSource();
+        theScene.setRoot(root);
     }
 
     public void backToMain(ActionEvent e) throws IOException{

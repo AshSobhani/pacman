@@ -1,4 +1,4 @@
-package controller;
+package controllers;
 
 
 
@@ -15,6 +15,9 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("../views/menu.fxml"));
         theStage.setTitle( "Pacman" );
         theStage.setScene(new Scene (root,1225, 720));
+
+        SoundController pacSound = new SoundController();
+        pacSound.playPacIntro();
 
         theStage.show();
     }
