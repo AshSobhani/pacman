@@ -1,26 +1,23 @@
 package controller;
 
-
-import javafx.event.ActionEvent;
 import java.io.IOException;
-import javafx.application.Application;
-import javafx.fxml.FXML;
+import javafx.application.Platform;
+import javafx.event.ActionEvent;
 import javafx.scene.Scene;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.control.Button;
 import javafx.scene.control.ColorPicker;
-import javafx.stage.Stage;
 import javafx.scene.Group;
-import javafx.scene.canvas.Canvas;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.paint.Color;
+import sprites.Cookie;
 
 public class Controller {
 
     public ColorPicker mazeColour;
     public ColorPicker backgroundColour;
+    public ColorPicker cookieColour;
 
     public void startClassic(ActionEvent e) throws IOException {
         Group playClassic = new Group();
@@ -37,81 +34,59 @@ public class Controller {
     }
 
     public void customGame(ActionEvent e) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("customGame.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("../views/customGame.fxml"));
         Node source = (Node) e.getSource();
         Scene theScene = source.getScene();
         theScene.setRoot(root);
     }
 
     public void leaderboard(ActionEvent e) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("leaderboard.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("../views/leaderboard.fxml"));
         Node source = (Node) e.getSource();
         Scene theScene = source.getScene();
         theScene.setRoot(root);
+    }
+
+    public void exitGame() {
+        Platform.exit();
+        System.exit(0);
+
     }
 
     public void backToMain(ActionEvent e) throws IOException{
-        Parent root = FXMLLoader.load(getClass().getResource("menu.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("../views/menu.fxml"));
         Node source = (Node) e.getSource();
         Scene theScene = source.getScene();
         theScene.setRoot(root);
     }
 
-    public void mazeColour() {
-        Color chosenColour = mazeColour.getValue();
-        BarObstacle.setMazeColour(chosenColour);
+    public void funkyJunction(ActionEvent e) {
+        loadMap(e, "funkyJunction.txt");
     }
 
-    public void funkyJunction(ActionEvent e) throws IOException {
+    public void swirleyLane(ActionEvent e) {
+        loadMap(e, "swirleyLane.txt");
+    }
+
+    public void twistedRoads(ActionEvent e) {
+        loadMap(e, "twistedRoads.txt");
+    }
+
+    public void loopyAvenue(ActionEvent e) {
+        loadMap(e, "loopyAvenue.txt");
+    }
+
+    public void loadMap(ActionEvent e, String fileName) {
         Group playCustom = new Group();
         Node source = (Node) e.getSource();
         Scene theScene = source.getScene();
         theScene.setRoot(playCustom);
+
         theScene.setFill(backgroundColour.getValue());
+        Cookie.cookieColour = cookieColour.getValue();
+        BarObstacle.mazeColour = mazeColour.getValue();
 
-        GameManager gameManager = new GameManager(playCustom, "funkyJunction.txt");
-        gameManager.drawBoard();
-
-        theScene.addEventHandler(KeyEvent.KEY_PRESSED, event->gameManager.movePacman(event));
-        theScene.addEventHandler(KeyEvent.KEY_PRESSED, event->gameManager.restartGame(event));
-    }
-
-    public void swirleyLane(ActionEvent e) throws IOException {
-        Group playCustom = new Group();
-        Node source = (Node) e.getSource();
-        Scene theScene = source.getScene();
-        theScene.setRoot(playCustom);
-        theScene.setFill(backgroundColour.getValue());
-
-        GameManager gameManager = new GameManager(playCustom, "swirleyLane.txt");
-        gameManager.drawBoard();
-
-        theScene.addEventHandler(KeyEvent.KEY_PRESSED, event->gameManager.movePacman(event));
-        theScene.addEventHandler(KeyEvent.KEY_PRESSED, event->gameManager.restartGame(event));
-    }
-
-    public void twistedRoads(ActionEvent e) throws IOException {
-        Group playCustom = new Group();
-        Node source = (Node) e.getSource();
-        Scene theScene = source.getScene();
-        theScene.setRoot(playCustom);
-        theScene.setFill(backgroundColour.getValue());
-
-        GameManager gameManager = new GameManager(playCustom, "twistedRoads.txt");
-        gameManager.drawBoard();
-
-        theScene.addEventHandler(KeyEvent.KEY_PRESSED, event->gameManager.movePacman(event));
-        theScene.addEventHandler(KeyEvent.KEY_PRESSED, event->gameManager.restartGame(event));
-    }
-
-    public void loopyAvenue(ActionEvent e) throws IOException {
-        Group playCustom = new Group();
-        Node source = (Node) e.getSource();
-        Scene theScene = source.getScene();
-        theScene.setRoot(playCustom);
-        theScene.setFill(backgroundColour.getValue());
-
-        GameManager gameManager = new GameManager(playCustom, "loopyAvenue.txt");
+        GameManager gameManager = new GameManager(playCustom, fileName);
         gameManager.drawBoard();
 
         theScene.addEventHandler(KeyEvent.KEY_PRESSED, event->gameManager.movePacman(event));

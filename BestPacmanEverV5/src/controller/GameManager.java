@@ -4,7 +4,6 @@ package controller;
 
 import javafx.animation.AnimationTimer;
 import javafx.scene.Group;
-import javafx.scene.image.Image;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.paint.Color;
@@ -13,16 +12,10 @@ import sprites.Cookie;
 import sprites.Ghost;
 import sprites.Pacman;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
-
 public class GameManager {
 
     private Pacman pacman;
     private Group root;
-//    private Set<Cookie> cookieSet;
-//    private Set<Ghost> ghosts;
     private AnimationTimer leftPacmanAnimation;
     private AnimationTimer rightPacmanAnimation;
     private AnimationTimer upPacmanAnimation;
@@ -42,8 +35,6 @@ public class GameManager {
         this.root = root;
         this.maze = new Maze(this);
         this.pacman = new Pacman(2.5 * BarObstacle.THICKNESS, 2.5 * BarObstacle.THICKNESS);
-//        this.cookieSet = new HashSet<>();
-//        this.ghosts = new HashSet<>();
         this.leftPacmanAnimation = this.createAnimation("left");
         this.rightPacmanAnimation = this.createAnimation("right");
         this.upPacmanAnimation = this.createAnimation("up");
@@ -122,8 +113,6 @@ public class GameManager {
 
         root.getChildren().add(this.pacman);
         this.pacman.placePacMan();
-//        this.generateGhosts();
-//        root.getChildren().addAll(this.ghosts);
         this.scoreBoard = new Score(root);
     }
 

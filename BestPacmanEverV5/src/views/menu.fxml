@@ -33,7 +33,7 @@
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
-            <Button layoutX="472.0" layoutY="478.0" mnemonicParsing="false" onAction="#leaderboard" prefHeight="51.0" prefWidth="281.0" style="-fx-background-color: #ff3f30;" text="Leaderboard">
+            <Button layoutX="472.0" layoutY="477.0" mnemonicParsing="false" onAction="#leaderboard" prefHeight="51.0" prefWidth="281.0" style="-fx-background-color: #ff3f30;" text="Leaderboard">
                <font>
                   <Font name="Avenir Next Heavy" size="24.0" />
                </font>
@@ -50,6 +50,14 @@
                   <Image url="@../resources/images/menuGhost.png" />
                </image>
             </ImageView>
+            <Button layoutX="472.0" layoutY="557.0" mnemonicParsing="false" onAction="#exitGame" prefHeight="51.0" prefWidth="281.0" text="Exit Game">
+               <font>
+                  <Font name="Avenir Next Heavy" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
          </children></AnchorPane>
    </children>
    <columnConstraints>

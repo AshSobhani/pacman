@@ -17,12 +17,12 @@
    <children>
       <AnchorPane prefHeight="720" prefWidth="1225" style="-fx-background-color: black;">
          <children>
-            <ImageView fitHeight="79.0" fitWidth="308.0" layoutX="459.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="79.0" fitWidth="308.0" layoutX="459.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../resources/images/title.png" />
                </image>
             </ImageView>
-            <Button layoutX="81.0" layoutY="287.0" mnemonicParsing="false" onAction="#funkyJunction" prefHeight="51.0" prefWidth="281.0" style="-fx-background-color: #ffd700;" text="Funky Junction">
+            <Button layoutX="81.0" layoutY="287.0" mnemonicParsing="false" onAction="#funkyJunction" prefHeight="51.0" prefWidth="281.0" style="-fx-background-color: #ffd700;" text="Funky Junction" textFill="#030303">
                <font>
                   <Font name="Avenir Next Heavy" size="24.0" />
                </font>
@@ -54,23 +54,29 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <ColorPicker fx:id="mazeColour" editable="true" layoutX="494.0" layoutY="469.0" onAction="#mazeColour" prefHeight="27.0" prefWidth="242.0" style="-fx-background-color: grey;" />
-            <ColorPicker fx:id="backgroundColour" editable="true" layoutX="496.0" layoutY="305.0" prefHeight="27.0" prefWidth="236.0" style="-fx-background-color: grey;" />
-            <Label layoutX="473.0" layoutY="239.0" style="-fx-text-fill: White;" text="Background Colour">
+            <ColorPicker fx:id="mazeColour" editable="true" layoutX="494.0" layoutY="396.0" prefHeight="27.0" prefWidth="242.0" style="-fx-background-color: grey;" />
+            <ColorPicker fx:id="backgroundColour" editable="true" layoutX="496.0" layoutY="261.0" prefHeight="27.0" prefWidth="236.0" style="-fx-background-color: grey;" />
+            <Label layoutX="475.0" layoutY="210.0" text="Background Colour" textFill="#f1f1f1">
                <font>
-                  <Font name="Avenir Next Heavy" size="30.0" />
+                  <Font name="Avenir Next Heavy" size="28.0" />
                </font>
             </Label>
-            <Button layoutX="539.0" layoutY="586.0" mnemonicParsing="false" onAction="#backToMain" prefHeight="43.0" prefWidth="153.0" text="Main Menu">
+            <ColorPicker fx:id="cookieColour" editable="true" layoutX="495.0" layoutY="534.0" prefHeight="27.0" prefWidth="242.0" style="-fx-background-color: grey;" />
+            <Label layoutX="513.0" layoutY="483.0" text="Cookie Colour" textAlignment="CENTER" textFill="#f1f1f1">
+               <font>
+                  <Font name="Avenir Next Heavy" size="28.0" />
+               </font>
+            </Label>
+            <Button layoutX="539.0" layoutY="619.0" mnemonicParsing="false" onAction="#backToMain" prefHeight="43.0" prefWidth="153.0" text="Main Menu">
                <font>
                   <Font name="Avenir Next Heavy" size="16.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
-            <Label layoutX="496.0" layoutY="408.0" style="-fx-text-fill: White;" text="Obstacle Colour">
+            <Label layoutX="499.0" layoutY="345.0" text="Obstacle Colour" textFill="#f1f1f1">
                <font>
-                  <Font name="Avenir Next Heavy" size="30.0" />
+                  <Font name="Avenir Next Heavy" size="28.0" />
                </font>
             </Label>
             <ImageView fitHeight="178.0" fitWidth="349.0" layoutX="47.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">

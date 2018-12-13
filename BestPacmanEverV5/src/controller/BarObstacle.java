@@ -7,8 +7,7 @@ import javafx.scene.shape.Rectangle;
 
 public class BarObstacle extends Rectangle {
 
-    private static Color mazeColour;
-
+    public static Color mazeColour;
     public static double THICKNESS = 25;
     /**
      *
