@@ -6,6 +6,7 @@ import javafx.scene.Group;
 import javafx.scene.image.Image;
 import sprites.Cookie;
 import sprites.Ghost;
+import sprites.Pacman;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -27,7 +28,7 @@ public class Maze {
     private Set<Ghost> ghosts;
     private GameManager gameManager;
 
-    private String[] ghostSprites = new String[]{"file:BestPacmanEverV5/src/resources/ghost1.png", "file:BestPacmanEverV5/src/resources/ghost2.png", "file:BestPacmanEverV5/src/resources/ghost3.png", "file:BestPacmanEverV5/src/resources/ghost4.png"};
+    private String[] ghostSprites = new String[]{"file:BestPacmanEverV5/src/resources/images/ghost1.png", "file:BestPacmanEverV5/src/resources/images/ghost2.png", "file:BestPacmanEverV5/src/resources/images/ghost3.png", "file:BestPacmanEverV5/src/resources/images/ghost4.png"};
 
     Maze(GameManager gameManager) {
         obstacles = new HashSet<>();
@@ -96,9 +97,14 @@ public class Maze {
                             cookies.add(new Cookie((x + 0.5) * BarObstacle.THICKNESS, (y + 0.5) * BarObstacle.THICKNESS));
                         }
                         if (line.charAt(x) == 'G'){
-                            ghosts.add(new Ghost(x * BarObstacle.THICKNESS, (y - 0.5) * BarObstacle.THICKNESS, new Image(ghostSprites[i]), this, gameManager));
+                            ghosts.add(new Ghost((x - 0.5) * BarObstacle.THICKNESS, (y - 0.5) * BarObstacle.THICKNESS, new Image(ghostSprites[i]), this, gameManager));
                             i++;
                         }
+                        if (line.charAt(x) == 'P'){
+                            Pacman.xPos = (x + 0.5) * BarObstacle.THICKNESS;
+                            Pacman.yPos = (y + 0.5) * BarObstacle.THICKNESS;
+                        }
+
                     }
                     y++;
                 }

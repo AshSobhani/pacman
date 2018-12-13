@@ -27,8 +27,8 @@ public class BarObstacle extends Rectangle {
             this.setHeight(length * BarObstacle.THICKNESS);
             this.setWidth(BarObstacle.THICKNESS);
         }
-          this.setFill(mazeColour);
-//        this.setStrokeWidth(3);
+        this.setFill(mazeColour);
+        this.setStrokeWidth(3);
     }
 
 

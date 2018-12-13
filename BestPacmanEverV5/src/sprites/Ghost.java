@@ -85,6 +85,7 @@ public class Ghost extends Rectangle implements Runnable {
                 topEdge = getY() - 10;
                 if (!maze.hasObstacle(leftEdge - 1, leftEdge, topEdge, bottomEdge)) {
                     this.direction = direction;
+                    this.setScaleX(-1);
                 }
                 break;
             case "right":
@@ -93,6 +94,7 @@ public class Ghost extends Rectangle implements Runnable {
                 topEdge = getY() - 10;
                 if (!maze.hasObstacle(rightEdge - 1, rightEdge, topEdge, bottomEdge)) {
                     this.direction = direction;
+                    this.setScaleX(1);
                 }
                 break;
         }
@@ -169,14 +171,14 @@ public class Ghost extends Rectangle implements Runnable {
                 double topEdge = getY();
                 double rightEdge = getX() + getWidth();
                 double bottomEdge = getY() + getHeight();
-                double padding = 12;
+                double padding = 11.5;
                 timesWalked++;
-                int walkAtLeast = 5;
+                int walkAtLeast = 3;
 
                 if (getX() < -5) {
                     setX(1230);
                 }
-                if (getX() > 1220) {
+                if (getX() > 1230) {
                     setX(-5);
                 }
 

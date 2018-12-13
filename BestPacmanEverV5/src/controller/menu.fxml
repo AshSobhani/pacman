@@ -14,32 +14,42 @@
    <children>
       <AnchorPane prefHeight="720" prefWidth="1225" style="-fx-background-color: black;">
          <children>
-            <Button layoutX="472.0" layoutY="355.0" mnemonicParsing="false" onAction="#startClassic" prefHeight="51.0" prefWidth="281.0" style="-fx-background-color: #ffd700;" text="Classic Game">
+            <Button layoutX="472.0" layoutY="315.0" mnemonicParsing="false" onAction="#startClassic" prefHeight="51.0" prefWidth="281.0" style="-fx-background-color: #ffd700;" text="Classic Game">
                <font>
                   <Font name="Avenir Next Heavy" size="24.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
-            <ImageView fitHeight="132.0" fitWidth="516.0" layoutX="355.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="132.0" fitWidth="516.0" layoutX="355.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../resources/title.png" />
+                  <Image url="@../resources/images/title.png" />
                </image>
             </ImageView>
-            <Button layoutX="472.0" layoutY="437.0" mnemonicParsing="false" onAction="#customGame" prefHeight="51.0" prefWidth="281.0" style="-fx-background-color: cyan;" text="Custom Game">
+            <Button layoutX="472.0" layoutY="397.0" mnemonicParsing="false" onAction="#customGame" prefHeight="51.0" prefWidth="281.0" style="-fx-background-color: cyan;" text="Custom Game">
                <font>
                   <Font name="Avenir Next Heavy" size="24.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
-            <Button layoutX="472.0" layoutY="518.0" mnemonicParsing="false" onAction="#leaderboard" prefHeight="51.0" prefWidth="281.0" style="-fx-background-color: #ff3f30;" text="Leaderboard">
+            <Button layoutX="472.0" layoutY="478.0" mnemonicParsing="false" onAction="#leaderboard" prefHeight="51.0" prefWidth="281.0" style="-fx-background-color: #ff3f30;" text="Leaderboard">
                <font>
                   <Font name="Avenir Next Heavy" size="24.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
+            <ImageView fitHeight="382.0" fitWidth="281.0" layoutX="869.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/images/menuPacman.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="227.0" fitWidth="197.0" layoutX="130.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/images/menuGhost.png" />
+               </image>
+            </ImageView>
          </children></AnchorPane>
    </children>
    <columnConstraints>

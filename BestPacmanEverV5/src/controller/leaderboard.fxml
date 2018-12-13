@@ -16,7 +16,7 @@
          <children>
             <ImageView fitHeight="132.0" fitWidth="516.0" layoutX="355.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../resources/title.png" />
+                  <Image url="@../resources/images/title.png" />
                </image>
             </ImageView>
             <Button layoutX="472.0" layoutY="518.0" mnemonicParsing="false" onAction="#leaderboard" prefHeight="51.0" prefWidth="281.0" style="-fx-background-color: #ff3f30;" text="Leaderboard">

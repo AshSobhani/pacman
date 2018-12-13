@@ -121,6 +121,7 @@ public class GameManager {
         this.maze.CreateMaze(root, "BestPacmanEverV5/src/resources/maps/" + map);
 
         root.getChildren().add(this.pacman);
+        this.pacman.placePacMan();
 //        this.generateGhosts();
 //        root.getChildren().addAll(this.ghosts);
         this.scoreBoard = new Score(root);
