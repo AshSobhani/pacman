@@ -19,9 +19,13 @@ public class Ghost extends Rectangle implements Runnable {
     Maze maze;
     AnimationTimer animation;
     int timesWalked;
+    private double xPos;
+    private double yPos;
 
     public Ghost(double x, double y, Image ghostPic, Maze maze, GameManager gameManager) {
 
+        xPos = x;
+        yPos = y;
         this.setX(x);
         this.setY(y);
         this.maze = maze;
@@ -214,6 +218,11 @@ public class Ghost extends Rectangle implements Runnable {
                 }
             }
         };
+    }
+
+    public void placeGhosts() {
+        this.setX(xPos);
+        this.setY(yPos);
     }
 
     @Override

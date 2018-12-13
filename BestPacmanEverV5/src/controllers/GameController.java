@@ -9,6 +9,7 @@ import javafx.scene.Parent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.ColorPicker;
 import javafx.scene.Group;
+import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.paint.Color;
 import sprites.Cookie;
@@ -28,8 +29,8 @@ public class GameController {
         GameManager gameManager = new GameManager(playClassic, "classicMap.txt");
         gameManager.drawBoard();
 
-        theScene.addEventHandler(KeyEvent.KEY_PRESSED, event->gameManager.movePacman(event));
-        theScene.addEventHandler(KeyEvent.KEY_PRESSED, event->gameManager.restartGame(event));
+        theScene.addEventHandler(KeyEvent.KEY_PRESSED, gameManager::movePacman);
+        theScene.addEventHandler(KeyEvent.KEY_PRESSED, gameManager::restartGame);
     }
 
     public void customGame(ActionEvent e) throws IOException {
@@ -81,7 +82,7 @@ public class GameController {
         loadMap(e, "loopyAvenue.txt");
     }
 
-    public void loadMap(ActionEvent e, String fileName) {
+    private void loadMap(ActionEvent e, String fileName) {
         Group playCustom = new Group();
         Node source = (Node) e.getSource();
         Scene theScene = source.getScene();
@@ -94,8 +95,8 @@ public class GameController {
         GameManager gameManager = new GameManager(playCustom, fileName);
         gameManager.drawBoard();
 
-        theScene.addEventHandler(KeyEvent.KEY_PRESSED, event->gameManager.movePacman(event));
-        theScene.addEventHandler(KeyEvent.KEY_PRESSED, event->gameManager.restartGame(event));
+        theScene.addEventHandler(KeyEvent.KEY_PRESSED, gameManager::movePacman);
+        theScene.addEventHandler(KeyEvent.KEY_PRESSED, gameManager::restartGame);
     }
 }
 

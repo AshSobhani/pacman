@@ -9,6 +9,7 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import sprites.Cookie;
 import sprites.Ghost;
@@ -30,6 +31,7 @@ public class GameManager {
     private int cookiesEaten;
     private String map;
     private SoundController pacSound;
+    private ScoreController scoreCon;
     private GameController game;
 
     /**
@@ -38,6 +40,7 @@ public class GameManager {
     GameManager(Group root, String map) {
         this.pacSound = new SoundController();
         this.game = new GameController();
+        this.scoreCon = new ScoreController();
         this.root = root;
         this.maze = new Maze(this);
         this.pacman = new Pacman(2.5 * BarObstacle.THICKNESS, 2.5 * BarObstacle.THICKNESS);
@@ -62,8 +65,8 @@ public class GameManager {
         this.downPacmanAnimation.stop();
         for (Ghost ghost : maze.getGhosts()) {
             ghost.getAnimation().stop();
+            ghost.placeGhosts();
         }
-        this.pacman.placePacMan();
         this.pacman.placePacMan();
         lifes--;
         score -= 10;
@@ -83,11 +86,13 @@ public class GameManager {
         for (Ghost ghost : maze.getGhosts()) {
             root.getChildren().remove(ghost);
         }
-        javafx.scene.text.Text endGame = new javafx.scene.text.Text("Finished! Press ESC to Restart or SPACE for Menu");
+        Text endGame = new Text("Finished! Press ESC to Restart or SPACE for Menu");
         endGame.setX(BarObstacle.THICKNESS * 3);
         endGame.setY(BarObstacle.THICKNESS * 28);
         endGame.setFont(Font.font("Avenir Next Heavy", 30));
         endGame.setFill(Color.ROYALBLUE);
+
+//        scoreCon.setScore(this.score);
         root.getChildren().remove(this.scoreBoard.score);
         root.getChildren().remove(this.scoreBoard.lifes);
         root.getChildren().add(endGame);
@@ -103,7 +108,6 @@ public class GameManager {
             maze.getCookies().clear();
             maze.getGhosts().clear();
             this.drawBoard();
-            this.pacman.placePacMan();
             this.pacman.placePacMan();
             this.lifes = 3;
             this.score = 0;
@@ -147,19 +151,15 @@ public class GameManager {
         switch(event.getCode()) {
             case RIGHT:
                 this.rightPacmanAnimation.start();
-                pacman.setRotate(0);
                 break;
             case LEFT:
                 this.leftPacmanAnimation.start();
-                pacman.setRotate(180);
                 break;
             case UP:
                 this.upPacmanAnimation.start();
-                pacman.setRotate(270);
                 break;
             case DOWN:
                 this.downPacmanAnimation.start();
-                pacman.setRotate(90);
                 break;
         }
     }
@@ -187,6 +187,7 @@ public class GameManager {
                         pacman.setCenterX(pacman.getCenterX() - step);
                         checkCookieCollection(pacman, "x");
                         checkGhostCoalition();
+                        pacman.setRotate(180);
                     }
 
                     break;
@@ -195,6 +196,7 @@ public class GameManager {
                         pacman.setCenterX(pacman.getCenterX() + step);
                         checkCookieCollection(pacman, "x");
                         checkGhostCoalition();
+                        pacman.setRotate(0);
                     }
                     break;
                 case "up":
@@ -202,6 +204,7 @@ public class GameManager {
                         pacman.setCenterY(pacman.getCenterY() - step);
                         checkCookieCollection(pacman, "y");
                         checkGhostCoalition();
+                        pacman.setRotate(270);
                     }
                     break;
                 case "down":
@@ -209,6 +212,7 @@ public class GameManager {
                        pacman.setCenterY(pacman.getCenterY() + step);
                        checkCookieCollection(pacman, "y");
                        checkGhostCoalition();
+                       pacman.setRotate(90);
                    }
                    break;
             }

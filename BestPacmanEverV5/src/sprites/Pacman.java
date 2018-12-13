@@ -13,7 +13,7 @@ public class Pacman extends Circle {
     static public double yPos;
 
     public Pacman(double x, double y) {
-        Image pacPic = new Image("file:BestPacmanEverV5/src/resources/images/pacman.png");
+        Image pacPic = new Image("file:BestPacmanEverV5/src/resources/images/pacman.gif");
 
         this.setCenterX(x);
         this.setCenterY(y);
