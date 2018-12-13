@@ -65,8 +65,8 @@ public class GameManager {
         for (Ghost ghost : maze.getGhosts()) {
             ghost.getAnimation().stop();
         }
-        this.pacman.setCenterX(2.5 * BarObstacle.THICKNESS);
-        this.pacman.setCenterY(2.5 * BarObstacle.THICKNESS);
+        this.pacman.placePacMan();
+        this.pacman.placePacMan();
         lifes--;
         score -= 10;
         this.scoreBoard.lifes.setText("Lifes: " + this.lifes);
@@ -105,8 +105,8 @@ public class GameManager {
             maze.getCookies().clear();
             maze.getGhosts().clear();
             this.drawBoard();
-            this.pacman.setCenterX(2.5 * BarObstacle.THICKNESS);
-            this.pacman.setCenterY(2.5 * BarObstacle.THICKNESS);
+            this.pacman.placePacMan();
+            this.pacman.placePacMan();
             this.lifes = 3;
             this.score = 0;
             this.cookiesEaten = 0;
@@ -135,6 +135,10 @@ public class GameManager {
         for (Ghost ghost : maze.getGhosts()) {
             ghost.run();
         }
+        this.downPacmanAnimation.stop();
+        this.upPacmanAnimation.stop();
+        this.leftPacmanAnimation.stop();
+        this.rightPacmanAnimation.stop();
         switch(event.getCode()) {
             case RIGHT:
                 this.rightPacmanAnimation.start();
@@ -151,27 +155,6 @@ public class GameManager {
             case DOWN:
                 this.downPacmanAnimation.start();
                 pacman.setRotate(90);
-                break;
-        }
-    }
-
-    /**
-     * Stops the pacman
-     * @param event
-     */
-    public void stopPacman(KeyEvent event) {
-        switch(event.getCode()) {
-            case RIGHT:
-                this.rightPacmanAnimation.stop();
-                break;
-            case LEFT:
-                this.leftPacmanAnimation.stop();
-                break;
-            case UP:
-                this.upPacmanAnimation.stop();
-                break;
-            case DOWN:
-                this.downPacmanAnimation.stop();
                 break;
         }
     }

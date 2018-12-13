@@ -33,7 +33,6 @@ public class Controller {
         gameManager.drawBoard();
 
         theScene.addEventHandler(KeyEvent.KEY_PRESSED, event->gameManager.movePacman(event));
-        theScene.addEventHandler(KeyEvent.KEY_RELEASED, event->gameManager.stopPacman(event));
         theScene.addEventHandler(KeyEvent.KEY_PRESSED, event->gameManager.restartGame(event));
     }
 
@@ -74,7 +73,6 @@ public class Controller {
         gameManager.drawBoard();
 
         theScene.addEventHandler(KeyEvent.KEY_PRESSED, event->gameManager.movePacman(event));
-        theScene.addEventHandler(KeyEvent.KEY_RELEASED, event->gameManager.stopPacman(event));
         theScene.addEventHandler(KeyEvent.KEY_PRESSED, event->gameManager.restartGame(event));
     }
 
@@ -89,7 +87,6 @@ public class Controller {
         gameManager.drawBoard();
 
         theScene.addEventHandler(KeyEvent.KEY_PRESSED, event->gameManager.movePacman(event));
-        theScene.addEventHandler(KeyEvent.KEY_RELEASED, event->gameManager.stopPacman(event));
         theScene.addEventHandler(KeyEvent.KEY_PRESSED, event->gameManager.restartGame(event));
     }
 
@@ -104,7 +101,6 @@ public class Controller {
         gameManager.drawBoard();
 
         theScene.addEventHandler(KeyEvent.KEY_PRESSED, event->gameManager.movePacman(event));
-        theScene.addEventHandler(KeyEvent.KEY_RELEASED, event->gameManager.stopPacman(event));
         theScene.addEventHandler(KeyEvent.KEY_PRESSED, event->gameManager.restartGame(event));
     }
 
@@ -119,7 +115,6 @@ public class Controller {
         gameManager.drawBoard();
 
         theScene.addEventHandler(KeyEvent.KEY_PRESSED, event->gameManager.movePacman(event));
-        theScene.addEventHandler(KeyEvent.KEY_RELEASED, event->gameManager.stopPacman(event));
         theScene.addEventHandler(KeyEvent.KEY_PRESSED, event->gameManager.restartGame(event));
     }
 }
