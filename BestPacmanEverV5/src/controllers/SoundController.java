@@ -37,22 +37,32 @@ public class SoundController {
 
     /**
      * Added some of the standard Pacman sounds and reset them so that they can be played again
+     * This will play when Pacman is opened up
      */
     public void playPacIntro() {
         pacIntro.start();
         pacIntro.setMicrosecondPosition(0);
     }
 
+    /**
+     * This sound will be played at the start of a game
+     */
     public void playPacStart() {
         pacStart.start();
         pacStart.setMicrosecondPosition(0);
     }
 
+    /**
+     * This is Pacmans eating sound when he's having the cookies
+     */
     public void playPacChomp() {
         pacChomp.start();
         pacChomp.setMicrosecondPosition(0);
     }
 
+    /**
+     * When the user dies this sound will play and reset ready for the next death
+     */
     public void playPacDeath() {
         pacDeath.start();
         pacDeath.setMicrosecondPosition(0);

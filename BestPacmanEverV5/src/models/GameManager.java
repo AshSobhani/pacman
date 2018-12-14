@@ -57,7 +57,7 @@ public class GameManager {
 
     /**
      * Set one life less
-     * It places the ghosts back to their orignal spawning position due to a placeGhost function
+     * It places the ghosts back to their orignal spawning position due to a placeGhost method
      */
     private void lifeLost() {
         pacSound.playPacDeath();
@@ -104,7 +104,7 @@ public class GameManager {
     /**
      * Restart the game
      * Upon ending the game the user can either Restart the game, go to main menu or save their score.
-     * @param event This event looks out for any keys being pressed to trigger the function to run.
+     * @param event This event looks out for any keys being pressed to trigger the method to run.
      */
     public void restartGameOrMenu(KeyEvent event) {
         if (event.getCode() == KeyCode.ESCAPE && gameEnded) {
@@ -304,7 +304,7 @@ public class GameManager {
 
     /**
      * Checks if pacman is touching a ghost
-     * If he is touching a ghost it triggers the lifeLost function which will prompt Pacman to respawn with 1 life less
+     * If he is touching a ghost it triggers the lifeLost method which will prompt Pacman to respawn with 1 life less
      */
     public void checkGhostCoalition() {
         double pacmanCenterY = pacman.getCenterY();

@@ -77,7 +77,7 @@ public class Maze {
     /**
      * Draws the maze
      * @param root This is the anchor for where everything will be located
-     * I changed this function quite drastically by implementing a load by file function which is a lot easier to use and maintain
+     * I changed this method quite drastically by implementing a load by file method which is a lot easier to use and maintain
      */
     public void CreateMaze(Group root, String pacMap) {
             // Internal object - the reader for the input filer

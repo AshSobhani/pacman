@@ -25,7 +25,7 @@ public class LeaderboardController {
 
     /**
      * I make a new Label on every loop otherwise they'd over write each other
-     * To find and connect to my grid pane correctly we had to make use of roots and its lookup function
+     * To find and connect to my grid pane correctly we had to make use of roots and its lookup method
      * @param scoreArray This is an array of both the scores and the names, this is the split up to be entered into the FXML Gridpane
      * @param root
      */
@@ -59,8 +59,8 @@ public class LeaderboardController {
     }
 
     /**
-     * This function is the original backToMain function that is triggared by the mouse in the menu screens
-     * @param e This is an action event waiting for input by the user to run this function
+     * This method is the original backToMain method that is triggared by the mouse in the menu screens
+     * @param e This is an action event waiting for input by the user to run this method
      * @throws IOException Incase of an error it handles it
      */
     public void backToMain(ActionEvent e) throws IOException {

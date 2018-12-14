@@ -13,6 +13,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
 
+
 public class UserScoreController {
     @FXML TextField uName;
     public LeaderboardController PL = new LeaderboardController();
@@ -22,16 +23,26 @@ public class UserScoreController {
     private static int score;
 
 
+    /**
+     * This method gets the username from the input by actively listening and by putting it into a local variable
+     */
     @FXML public void getUsername() {
         uName.textProperty().addListener(observable -> {
             username = uName.getCharacters().toString();
         });
     }
 
+    /**
+     * This method gets the score from the users most recent game and stores it into a variable
+     */
     public void getScore(int gameScore) {
         score = gameScore;
     }
 
+    /**
+     * This is a file writer which adds users to the score file so it can be read by the board
+     * @throws Exception Incase of an error it handles it
+     */
     public void writeNameScore() throws Exception {
         BufferedWriter writer;
         nameScore = username + ":" + Integer.toString(score);
@@ -43,6 +54,11 @@ public class UserScoreController {
         writer.close();
     }
 
+    /**
+     *
+     * @return This method is a readfile and is used to create an array of all the users and their scores ready to be sorted
+     * @throws Exception Incase of an error it handles it
+     */
     public ArrayList<String> readNameScore() throws Exception {
         BufferedReader reader;
         String tempLine;
@@ -65,8 +81,8 @@ public class UserScoreController {
     }
 
     /**
-     *
-     * @throws Exception
+     * This method adds the most recent users score & name to the list and then goes through it and sorts them in terms of points.
+     * @throws Exception Incase of an error it handles it
      */
     public void makeLeaderboard() throws Exception {
         writeNameScore();
@@ -89,8 +105,8 @@ public class UserScoreController {
     }
 
     /**
-     * This function takes the Names and Scores from UserScoreController and prints them to a board which is positioned on a leaderboard scene
-     * @param e This is an action event waiting for input by the user to run this function
+     * This method takes the Names and Scores from UserScoreController and prints them to a board which is positioned on a leaderboard scene
+     * @param e This is an action event waiting for input by the user to run this method
      * @throws Exception Incase of an error it handles it
      */
     public void leaderboard(ActionEvent e) throws Exception {
@@ -105,8 +121,8 @@ public class UserScoreController {
     }
 
     /**
-     * This function is the original backToMain function that is triggared by the mouse in the menu screens
-     * @param e This is an action event waiting for input by the user to run this function
+     * This method is the original backToMain method that is triggared by the mouse in the menu screens
+     * @param e This is an action event waiting for input by the user to run this method
      * @throws IOException Incase of an error it handles it
      */
     public void backToMain(ActionEvent e) throws IOException {
