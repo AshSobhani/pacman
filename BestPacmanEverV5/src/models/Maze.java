@@ -38,8 +38,8 @@ public class Maze {
 
     /**
      * Checks if point is touching obstacles
-     * @param x
-     * @param y
+     * @param x geting X for initialisation
+     * @param y geting Y for initialisation
      * @return
      */
     public Boolean isTouching(double x, double y, double padding) {
@@ -58,10 +58,10 @@ public class Maze {
 
     /**
      * lets you know if there's an obstacle in the current coordinate
-     * @param fromX
-     * @param toX
-     * @param fromY
-     * @param toY
+     * @param fromX Used to check obstacles coming from X
+     * @param toX Used to check obstacles going to X
+     * @param fromY Used to check obstacles going to Y
+     * @param toY Used to check obstacles going to X
      * @return
      */
     public Boolean hasObstacle(double fromX,  double toX, double fromY, double toY) {
@@ -76,7 +76,8 @@ public class Maze {
 
     /**
      * Draws the maze
-     * @param root
+     * @param root This is the anchor for where everything will be located
+     * I changed this function quite drastically by implementing a load by file function which is a lot easier to use and maintain
      */
     public void CreateMaze(Group root, String pacMap) {
             // Internal object - the reader for the input filer

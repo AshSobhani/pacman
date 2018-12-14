@@ -22,6 +22,14 @@ public class Ghost extends Rectangle implements Runnable {
     private double xPos;
     private double yPos;
 
+    /**
+     *
+     * @param x Used to set X coordinate
+     * @param y Used to set Y coordinate
+     * @param ghostPic I use this to give my Pacman a better look, I have currently implemented a GiF which this ststem
+     * @param maze
+     * @param gameManager
+     */
     public Ghost(double x, double y, Image ghostPic, Maze maze, GameManager gameManager) {
 
         xPos = x;
@@ -38,6 +46,12 @@ public class Ghost extends Rectangle implements Runnable {
         this.createAnimation();
     }
 
+    /**
+     *
+     * @param exclude1 Used to define things the ghosts categorically shouldn't do
+     * @param exclude2 Used to define things the ghosts categorically shouldn't do
+     * @return
+     */
     private String getRandomDirection(String exclude1, String exclude2) {
         String[] directions = {"left", "right", "up", "down"};
         int rnd = new Random().nextInt(directions.length);
@@ -45,11 +59,6 @@ public class Ghost extends Rectangle implements Runnable {
             rnd = new Random().nextInt(directions.length);
         }
         return directions[rnd];
-    }
-
-    private boolean getRandomBoolean() {
-        Random rand = new Random();
-        return rand.nextBoolean();
     }
 
     /**
@@ -61,8 +70,8 @@ public class Ghost extends Rectangle implements Runnable {
     }
 
     /**
-     *
-     * @param direction
+     * When moving the Ghost will be looking for paths to take (This can be optimised)
+     * @param direction This is used to keep the Ghosts on track
      */
     private void checkIftheresPathToGo(String direction) {
         double rightEdge, leftEdge, topEdge, bottomEdge;
@@ -163,6 +172,8 @@ public class Ghost extends Rectangle implements Runnable {
 
     /**
      * Creates an animation of the ghost
+     * Ive implemnted the portal using X & coordinates that we must do
+     * The padding and the walkAtLeast try to optimise the ghosts moving accuracy
      */
     public void createAnimation() {
 
@@ -220,6 +231,10 @@ public class Ghost extends Rectangle implements Runnable {
         };
     }
 
+    /**
+     * I made this little commmand to placeGhosts anywhere on the map
+     *
+     */
     public void placeGhosts() {
         this.setX(xPos);
         this.setY(yPos);

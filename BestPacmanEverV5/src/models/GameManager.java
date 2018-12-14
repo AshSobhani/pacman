@@ -3,7 +3,7 @@ package models;
 
 
 import controllers.GameController;
-import controllers.LeaderboardController;
+import controllers.UserScoreController;
 import controllers.SoundController;
 import javafx.animation.AnimationTimer;
 import javafx.scene.Group;
@@ -32,7 +32,7 @@ public class GameManager {
     private int cookiesEaten;
     private String map;
     private SoundController pacSound;
-    private LeaderboardController scoreCon;
+    private UserScoreController scoreCon;
     private GameController game;
 
     /**
@@ -41,7 +41,7 @@ public class GameManager {
     public GameManager(Group root, String map) {
         this.pacSound = new SoundController();
         this.game = new GameController();
-        this.scoreCon = new LeaderboardController();
+        this.scoreCon = new UserScoreController();
         this.root = root;
         this.maze = new Maze(this);
         this.pacman = new Pacman(2.5 * BarObstacle.THICKNESS, 2.5 * BarObstacle.THICKNESS);
@@ -57,6 +57,7 @@ public class GameManager {
 
     /**
      * Set one life less
+     * It places the ghosts back to their orignal spawning position due to a placeGhost function
      */
     private void lifeLost() {
         pacSound.playPacDeath();
@@ -80,6 +81,7 @@ public class GameManager {
 
     /**
      * Ends the game
+     * Removes everything before ending the game to reduce unnecessary background work
      */
     private void endGame() {
         this.gameEnded = true;
@@ -87,7 +89,7 @@ public class GameManager {
         for (Ghost ghost : maze.getGhosts()) {
             root.getChildren().remove(ghost);
         }
-        Text endGame = new Text("Finished! Press ESC to Restart or SPACE for Menu");
+        Text endGame = new Text("ESC - Restart  |  SPACE - Menu  |  ENTER - Add High Score");
         endGame.setX(BarObstacle.THICKNESS * 3);
         endGame.setY(BarObstacle.THICKNESS * 28);
         endGame.setFont(Font.font("Avenir Next Heavy", 30));
@@ -101,9 +103,10 @@ public class GameManager {
 
     /**
      * Restart the game
-     * @param event
+     * Upon ending the game the user can either Restart the game, go to main menu or save their score.
+     * @param event This event looks out for any keys being pressed to trigger the function to run.
      */
-    public void restartGame(KeyEvent event) {
+    public void restartGameOrMenu(KeyEvent event) {
         if (event.getCode() == KeyCode.ESCAPE && gameEnded) {
             root.getChildren().clear();
             maze.getCookies().clear();
@@ -126,10 +129,22 @@ public class GameManager {
                 System.out.print("Failed To Load Menu");
             };
         }
+        if (event.getCode() == KeyCode.ENTER && gameEnded) {
+            try {
+                root.getChildren().clear();
+                maze.getCookies().clear();
+                maze.getGhosts().clear();
+                gameEnded = true;
+                GameController.newUserScore(event);
+            } catch (Exception Failed) {
+                System.out.print("Failed To User Input Screen");
+            };
+        }
     }
 
     /**
      * Draws the board of the game with the cookies and the Pacman
+     * pacSound is used to play audio, in this case its used for the level start music
      */
     public void drawBoard() {
         this.maze.CreateMaze(root, "BestPacmanEverV5/src/resources/maps/" + map);
@@ -143,7 +158,7 @@ public class GameManager {
     /**
      * Moves the pacman
      * Moves constantly until either a obstacle is hit or user changes PacMans direction
-     * @param event
+     * @param event this event just looks out for keys pressed to change the Pacmans animation
      */
     public void movePacman(KeyEvent event) {
         for (Ghost ghost : maze.getGhosts()) {
@@ -171,8 +186,8 @@ public class GameManager {
 
     /**
      * Creates an animation of the movement.
-     * @param direction
-     * @return
+     * @param direction By having direction we can unsure that Pacman rotates to face the way he is moving
+     * @return The Pacmans X & Y is used to implement the portal feature, I di this by setting triggers which will move the sprite
      */
     private AnimationTimer createAnimation(String direction) {
         double step = 5;
@@ -227,8 +242,8 @@ public class GameManager {
 
     /**
      * Checks if the Pacman touches cookies.
-     * @param pacman
-     * @param axis
+     * @param pacman Parameter is necessary to detect if the Pacman eats a cookie
+     * @param axis Used to check if Pacman is facing right
      */
     private void checkCookieCollection(Pacman pacman, String axis) {
         double pacmanCenterY = pacman.getCenterY();
@@ -289,6 +304,7 @@ public class GameManager {
 
     /**
      * Checks if pacman is touching a ghost
+     * If he is touching a ghost it triggers the lifeLost function which will prompt Pacman to respawn with 1 life less
      */
     public void checkGhostCoalition() {
         double pacmanCenterY = pacman.getCenterY();

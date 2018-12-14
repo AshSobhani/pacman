@@ -9,6 +9,10 @@ import javafx.scene.Parent;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 
+/**
+ * The main class is simply used to initialise the games Stage and Scene and trigger
+ * I also use the main to play the initial Pacman intro music
+ */
 public class Main extends Application {
 
     @Override

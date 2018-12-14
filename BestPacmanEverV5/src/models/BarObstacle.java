@@ -11,8 +11,8 @@ public class BarObstacle extends Rectangle {
     public static double THICKNESS = 25;
     /**
      *
-     * @param x
-     * @param y
+     * @param x Sets the X Coordinate of the Bar Obstacle
+     * @param y Sets the y Coordinate of the Bar Obstacle
      * @param orientation - horizontal or vertical
      * @param length - the length of the bar (1 == 100px)
      */
@@ -30,7 +30,10 @@ public class BarObstacle extends Rectangle {
         this.setStrokeWidth(3);
     }
 
-
+    /**
+     *
+     * @param chosenColour setter to set Maze colour
+     */
     public static void setMazeColour(Color chosenColour) {
         mazeColour = chosenColour;
     }

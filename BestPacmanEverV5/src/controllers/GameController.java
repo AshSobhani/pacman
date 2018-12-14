@@ -19,6 +19,8 @@ public class GameController {
     public ColorPicker mazeColour;
     public ColorPicker backgroundColour;
     public ColorPicker cookieColour;
+    public LeaderboardController PL = new LeaderboardController();
+    public UserScoreController SC = new UserScoreController();
 
     public void startClassic(ActionEvent e) throws IOException {
         Group playClassic = new Group();
@@ -31,7 +33,7 @@ public class GameController {
         gameManager.drawBoard();
 
         theScene.addEventHandler(KeyEvent.KEY_PRESSED, gameManager::movePacman);
-        theScene.addEventHandler(KeyEvent.KEY_PRESSED, gameManager::restartGame);
+        theScene.addEventHandler(KeyEvent.KEY_PRESSED, gameManager::restartGameOrMenu);
     }
 
     public void customGame(ActionEvent e) throws IOException {
@@ -41,10 +43,19 @@ public class GameController {
         theScene.setRoot(root);
     }
 
-    public void leaderboard(ActionEvent e) throws IOException {
+    public void leaderboard(ActionEvent e) throws Exception {
+        SC.scoreArray = SC.readNameScore();
         Parent root = FXMLLoader.load(getClass().getResource("../views/leaderboard.fxml"));
         Node source = (Node) e.getSource();
         Scene theScene = source.getScene();
+        theScene.setRoot(root);
+
+        PL.printToBoard(SC.scoreArray, root);
+    }
+
+    public static void newUserScore(KeyEvent e) throws IOException {
+        Parent root = FXMLLoader.load(GameController.class.getResource("../views/newUserScore.fxml"));
+        Scene theScene = (Scene) e.getSource();
         theScene.setRoot(root);
     }
 
@@ -60,7 +71,7 @@ public class GameController {
         theScene.setRoot(root);
     }
 
-    public void backToMain(ActionEvent e) throws IOException{
+    public void backToMainB(ActionEvent e) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("../views/menu.fxml"));
         Node source = (Node) e.getSource();
         Scene theScene = source.getScene();
@@ -97,7 +108,7 @@ public class GameController {
         gameManager.drawBoard();
 
         theScene.addEventHandler(KeyEvent.KEY_PRESSED, gameManager::movePacman);
-        theScene.addEventHandler(KeyEvent.KEY_PRESSED, gameManager::restartGame);
+        theScene.addEventHandler(KeyEvent.KEY_PRESSED, gameManager::restartGameOrMenu);
     }
 }
 

@@ -4,72 +4,61 @@ import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.HPos;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
+import javafx.scene.text.Text;
+import models.sortLeaderboard;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class LeaderboardController {
-    @FXML TextField uName;
+    @FXML GridPane theBoard;
 
-    private String username, nameScore;
-    private static int score;
+    public void printToBoard(ArrayList<String> scoreArray, Parent root) {
+        System.out.println("Hello");
+        GridPane scoreBoard = (GridPane) root.lookup("#theBoard");
 
+        for (int i = 0; i < scoreBoard.getRowCount() - 1 && i < scoreArray.size(); i++) {
+            Label userName = new Label();
 
-    @FXML public void getUsername() {
-        uName.textProperty().addListener(observable -> {
-            username = uName.getCharacters().toString();
-        });
-    }
+            userName.setText(scoreArray.get(i).split(":")[1]);
+            userName.setFont(Font.font("Avenir Next Heavy", 30));
+            userName.setTextFill(Color.CYAN);
 
-    public void getScore(int gameScore) {
-        score = gameScore;
-    }
+            GridPane.setHalignment(userName, HPos.LEFT);
 
-//    public void mergeNameScore() {
-//        nameScore = username + "|" + Integer.toString(score);
-//        System.out.println(nameScore);
-//    }
-
-    public void writeNameScore() throws Exception {
-        BufferedWriter writer;
-        nameScore = username + "|" + Integer.toString(score);
-
-        writer = new BufferedWriter(new FileWriter("BestPacmanEverV5/src/resources/scores/cScores"));
-        writer.write(nameScore);
-        writer.newLine();
-        writer.flush();
-        writer.close();
-    }
-
-    public ArrayList<String> readNameScore() throws Exception {
-        BufferedReader reader;
-        String tempLine;
-
-        ArrayList<String> fileData = new ArrayList<>();
-        reader = new BufferedReader(new FileReader("BestPacmanEverV5/src/resources/scores/cScores"));
-
-        while ((tempLine = reader.readLine()) != null) {
-            fileData.add(tempLine);
+            scoreBoard.add(userName, 1, i+1 , 1, 1);
         }
 
-        return fileData;
+        for (int i = 0; i < scoreBoard.getRowCount() - 1 && i < scoreArray.size(); i++) {
+            Label topScore = new Label();
+
+            topScore.setText(scoreArray.get(i).split(":")[0]);
+            topScore.setFont(Font.font("Avenir Next Heavy", 30));
+            topScore.setTextFill(Color.CYAN);
+
+            GridPane.setHalignment(topScore, HPos.LEFT);
+
+            scoreBoard.add(topScore, 0, i+1, 1, 1);
+        }
     }
+
+
 
     public void backToMain(ActionEvent e) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("../views/menu.fxml"));
         Node source = (Node) e.getSource();
         Scene theScene = source.getScene();
         theScene.setRoot(root);
-    }
-
-    public void exitGame() {
-        Platform.exit();
-        System.exit(0);
-
     }
 }
 
