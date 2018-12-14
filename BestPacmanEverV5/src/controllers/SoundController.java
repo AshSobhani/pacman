@@ -13,6 +13,10 @@ public class SoundController {
     private Clip pacChomp;
     private Clip pacDeath;
 
+    /**
+     * I have made a sound controller to safely keep all the audio directories in one place
+     * I have also wrapped it in a Exception to ensure that program would fail gracefully if th that were case
+     */
     public SoundController() {
         try {
             pacIntro = AudioSystem.getClip();
@@ -31,6 +35,9 @@ public class SoundController {
         }
     }
 
+    /**
+     * Added some of the standard Pacman sounds and reset them so that they can be played again
+     */
     public void playPacIntro() {
         pacIntro.start();
         pacIntro.setMicrosecondPosition(0);

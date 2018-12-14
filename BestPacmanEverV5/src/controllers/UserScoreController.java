@@ -64,6 +64,10 @@ public class UserScoreController {
         return sortedFile;
     }
 
+    /**
+     *
+     * @throws Exception
+     */
     public void makeLeaderboard() throws Exception {
         writeNameScore();
 
@@ -84,6 +88,11 @@ public class UserScoreController {
         writer.close();
     }
 
+    /**
+     * This function takes the Names and Scores from UserScoreController and prints them to a board which is positioned on a leaderboard scene
+     * @param e This is an action event waiting for input by the user to run this function
+     * @throws Exception Incase of an error it handles it
+     */
     public void leaderboard(ActionEvent e) throws Exception {
         scoreArray = readNameScore();
 
@@ -95,6 +104,11 @@ public class UserScoreController {
         PL.printToBoard(scoreArray, root);
     }
 
+    /**
+     * This function is the original backToMain function that is triggared by the mouse in the menu screens
+     * @param e This is an action event waiting for input by the user to run this function
+     * @throws IOException Incase of an error it handles it
+     */
     public void backToMain(ActionEvent e) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("../views/menu.fxml"));
         Node source = (Node) e.getSource();
