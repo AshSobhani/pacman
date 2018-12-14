@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UserScoreController">
+   <children>
+      <AnchorPane prefHeight="720" prefWidth="1225" style="-fx-background-color: black;">
+         <children>
+            <Label layoutX="261.0" layoutY="84.0" text="Join The LeaderBoard!" textFill="#ff3f30">
+               <font>
+                  <Font name="Avenir Next Heavy" size="63.0" />
+               </font>
+            </Label>
+            <Label layoutX="258.0" layoutY="80.0" text="Join The LeaderBoard!" textFill="#30f0ff">
+               <font>
+                  <Font name="Avenir Next Heavy" size="63.0" />
+               </font>
+            </Label>
+            <Label layoutX="259.0" layoutY="82.0" text="Join The LeaderBoard!" textFill="#ffd900">
+               <font>
+                  <Font name="Avenir Next Heavy" size="63.0" />
+               </font>
+            </Label>
+            <Button layoutX="554.0" layoutY="585.0" mnemonicParsing="false" onAction="#backToMain" prefHeight="43.0" prefWidth="153.0" text="Main Menu">
+               <font>
+                  <Font name="Avenir Next Heavy" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TextField fx:id="uName" alignment="CENTER" layoutX="472.0" layoutY="338.0" onKeyPressed="#getUsername" promptText="Username">
+               <font>
+                  <Font name="Avenir Next Heavy" size="22.0" />
+               </font></TextField>
+            <Button layoutX="479.0" layoutY="399.0" mnemonicParsing="false" onAction="#makeLeaderboard" prefHeight="27.0" prefWidth="282.0" style="-fx-background-color: #ffd900;" text="Submit Score">
+               <font>
+                  <Font name="Avenir Next Heavy" size="20.0" />
+               </font></Button>
+            <Label layoutX="340.0" layoutY="183.0" text="(As Long As Your In The Top 10)" textFill="#00f7ff">
+               <font>
+                  <Font name="Avenir Next Heavy" size="35.0" />
+               </font>
+            </Label>
+            <Button layoutX="479.0" layoutY="458.0" mnemonicParsing="false" onAction="#leaderboard" prefHeight="27.0" prefWidth="282.0" style="-fx-background-color: #ff3f30;" text="Leaderboard">
+               <font>
+                  <Font name="Avenir Next Heavy" size="20.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
