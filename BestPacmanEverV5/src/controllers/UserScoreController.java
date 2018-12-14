@@ -34,6 +34,7 @@ public class UserScoreController {
 
     /**
      * This method gets the score from the users most recent game and stores it into a variable
+     * @param gameScore Its a getter for gameScore
      */
     public void getScore(int gameScore) {
         score = gameScore;
@@ -81,7 +82,7 @@ public class UserScoreController {
     }
 
     /**
-     * This method adds the most recent users score & name to the list and then goes through it and sorts them in terms of points.
+     * This method adds the most recent users score and name to the list and then goes through it and sorts them in terms of points.
      * @throws Exception Incase of an error it handles it
      */
     public void makeLeaderboard() throws Exception {

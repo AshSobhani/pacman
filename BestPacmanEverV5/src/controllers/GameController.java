@@ -145,7 +145,7 @@ public class GameController {
     }
 
     /**
-     * This method creates a new scene for a custom map, it then sets the custom colours & finally it draws the map and adds the event handlers
+     * This method creates a new scene for a custom map, it then sets the custom colours, finally it draws the map and adds the event handlers
      * @param e This is an action event waiting for input by the user to run this method
      * @param fileName The file name is important as it is the map structure we will build on
      */

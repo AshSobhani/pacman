@@ -40,7 +40,8 @@ public class Maze {
      * Checks if point is touching obstacles
      * @param x geting X for initialisation
      * @param y geting Y for initialisation
-     * @return
+     * @param padding Padding is used to keep sprites at a safe distance to avoid bugs
+     * @return return either True of False to signal if its Touching
      */
     public Boolean isTouching(double x, double y, double padding) {
         for (BarObstacle barObstacle:obstacles) {
@@ -58,11 +59,11 @@ public class Maze {
 
     /**
      * lets you know if there's an obstacle in the current coordinate
-     * @param fromX Used to check obstacles coming from X
-     * @param toX Used to check obstacles going to X
-     * @param fromY Used to check obstacles going to Y
-     * @param toY Used to check obstacles going to X
-     * @return
+     * @param fromX Current X Value of the object
+     * @param toX The Y position the object wants to go
+     * @param fromY Current Y Value of the object
+     * @param toY The Y position the object wants to go
+     * @return Return whether or not its touching
      */
     public Boolean hasObstacle(double fromX,  double toX, double fromY, double toY) {
         boolean isTouching = false;
@@ -77,6 +78,7 @@ public class Maze {
     /**
      * Draws the maze
      * @param root This is the anchor for where everything will be located
+     * @param pacMap This is the map I want to generate (Being fed in from the map selector in controller
      * I changed this method quite drastically by implementing a load by file method which is a lot easier to use and maintain
      */
     public void CreateMaze(Group root, String pacMap) {

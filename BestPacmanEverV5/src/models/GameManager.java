@@ -36,7 +36,9 @@ public class GameManager {
     private GameController game;
 
     /**
-     * Constructor
+     * Constructor used to preset everything for the day
+     * @param root A group of objects
+     * @param map Map is where the directory for the map will be held
      */
     public GameManager(Group root, String map) {
         this.pacSound = new SoundController();
@@ -187,7 +189,7 @@ public class GameManager {
     /**
      * Creates an animation of the movement.
      * @param direction By having direction we can unsure that Pacman rotates to face the way he is moving
-     * @return The Pacmans X & Y is used to implement the portal feature, I di this by setting triggers which will move the sprite
+     * @return The Pacmans X, Y is used to implement the portal feature, I did this by setting triggers which will move the sprite
      */
     private AnimationTimer createAnimation(String direction) {
         double step = 5;

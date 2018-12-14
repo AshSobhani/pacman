@@ -27,7 +27,7 @@ public class LeaderboardController {
      * I make a new Label on every loop otherwise they'd over write each other
      * To find and connect to my grid pane correctly we had to make use of roots and its lookup method
      * @param scoreArray This is an array of both the scores and the names, this is the split up to be entered into the FXML Gridpane
-     * @param root
+     * @param root What the root will be set to
      */
     public void printToBoard(ArrayList<String> scoreArray, Parent root) {
         System.out.println("Hello");

@@ -27,8 +27,8 @@ public class Ghost extends Rectangle implements Runnable {
      * @param x Used to set X coordinate
      * @param y Used to set Y coordinate
      * @param ghostPic I use this to give my Pacman a better look, I have currently implemented a GiF which this ststem
-     * @param maze
-     * @param gameManager
+     * @param maze The Maze the ghost is on
+     * @param gameManager Just carrying through a game parameter
      */
     public Ghost(double x, double y, Image ghostPic, Maze maze, GameManager gameManager) {
 
@@ -50,7 +50,7 @@ public class Ghost extends Rectangle implements Runnable {
      *
      * @param exclude1 Used to define things the ghosts categorically shouldn't do
      * @param exclude2 Used to define things the ghosts categorically shouldn't do
-     * @return
+     * @return Return a String which gives a random direction
      */
     private String getRandomDirection(String exclude1, String exclude2) {
         String[] directions = {"left", "right", "up", "down"};
@@ -63,7 +63,7 @@ public class Ghost extends Rectangle implements Runnable {
 
     /**
      * Gets the animation for the ghost
-     * @return
+     * @return returns an animation timer
      */
     public AnimationTimer getAnimation() {
         return animation;
@@ -115,13 +115,13 @@ public class Ghost extends Rectangle implements Runnable {
 
     /**
      *
-     * @param whereToGo
-     * @param whereToChangeTo
-     * @param leftEdge
-     * @param topEdge
-     * @param rightEdge
-     * @param bottomEdge
-     * @param padding
+     * @param whereToGo Where the ghost is going
+     * @param whereToChangeTo Which direction the ghost will go when he cant keep moving
+     * @param leftEdge Needed for wben the edge of the ghost is clipping onto the obstacles
+     * @param topEdge Needed for wben the edge of the ghost is clipping onto the obstacles
+     * @param rightEdge Needed for wben the edge of the ghost is clipping onto the obstacles
+     * @param bottomEdge Needed for wben the edge of the ghost is clipping onto the obstacles
+     * @param padding Padding is used to keep the Ghost from getting to close to the obstacles and glitching out
      */
     private void moveUntilYouCant(String whereToGo, String whereToChangeTo, double leftEdge, double topEdge, double rightEdge, double bottomEdge, double padding) {
         double step = 5;
@@ -172,7 +172,7 @@ public class Ghost extends Rectangle implements Runnable {
 
     /**
      * Creates an animation of the ghost
-     * Ive implemnted the portal using X & coordinates that we must do
+     * I've implemented the portal using the x, y coordinets and setting boundries that will teleport the user if he hits them
      * The padding and the walkAtLeast try to optimise the ghosts moving accuracy
      */
     public void createAnimation() {
@@ -233,7 +233,7 @@ public class Ghost extends Rectangle implements Runnable {
 
     /**
      * I made this little commmand to placeGhosts anywhere on the map
-     *
+     * Similar to my Pacman place method
      */
     public void placeGhosts() {
         this.setX(xPos);
