@@ -4,7 +4,6 @@ package models;
 
 import controllers.GameController;
 import controllers.UserScoreController;
-import controllers.SoundController;
 import javafx.animation.AnimationTimer;
 import javafx.scene.Group;
 import javafx.scene.input.KeyCode;
@@ -31,7 +30,7 @@ public class GameManager {
     private boolean gameEnded;
     private int cookiesEaten;
     private String map;
-    private SoundController pacSound;
+    private SoundManager pacSound;
     private UserScoreController scoreCon;
     private GameController game;
 
@@ -41,7 +40,7 @@ public class GameManager {
      * @param map Map is where the directory for the map will be held
      */
     public GameManager(Group root, String map) {
-        this.pacSound = new SoundController();
+        this.pacSound = new SoundManager();
         this.game = new GameController();
         this.scoreCon = new UserScoreController();
         this.root = root;
@@ -126,7 +125,7 @@ public class GameManager {
                 maze.getCookies().clear();
                 maze.getGhosts().clear();
                 gameEnded = true;
-                game.backToMain(event);
+                game.backToMainK(event);
             } catch (Exception Failed) {
                 System.out.print("Failed To Load Menu");
             };

@@ -1,4 +1,4 @@
-package controllers;
+package models;
 
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
@@ -6,7 +6,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 
-public class SoundController {
+public class SoundManager {
     private int toggle;
     private Clip pacIntro;
     private Clip pacStart;
@@ -17,7 +17,7 @@ public class SoundController {
      * I have made a sound controller to safely keep all the audio directories in one place
      * I have also wrapped it in a Exception to ensure that program would fail gracefully if th that were case
      */
-    public SoundController() {
+    public SoundManager() {
         try {
             pacIntro = AudioSystem.getClip();
             pacIntro.open(AudioSystem.getAudioInputStream(new File("BestPacmanEverV5/src/resources/sounds/pacIntro.wav")));

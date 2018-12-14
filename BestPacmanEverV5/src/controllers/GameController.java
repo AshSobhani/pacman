@@ -15,7 +15,7 @@ import models.BarObstacle;
 import models.GameManager;
 import sprites.Cookie;
 
-public class GameController {
+public class GameController implements ControllerInterface {
     public ColorPicker mazeColour;
     public ColorPicker backgroundColour;
     public ColorPicker cookieColour;
@@ -90,22 +90,22 @@ public class GameController {
     }
 
     /**
-     * This method is a variation of backToMain as the original one took a mouse input whereas this one takes a keyboard input
+     * This method is a variation of backToMainK as the original one took a mouse input whereas this one takes a keyboard input
      * @param e This is an action event waiting for input by the user to run this method
      * @throws IOException Incase of an error it handles it
      */
-    public void backToMain(KeyEvent e) throws IOException {
+    public void backToMainK(KeyEvent e) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("../views/menu.fxml"));
         Scene theScene = (Scene) e.getSource();
         theScene.setRoot(root);
     }
 
     /**
-     * This method is the original backToMain method that is triggered by the mouse in the menu screens
+     * This method is the original backToMainK method that is triggered by the mouse in the menu screens
      * @param e This is an action event waiting for input by the user to run this method
      * @throws IOException Incase of an error it handles it
      */
-    public void backToMainB(ActionEvent e) throws Exception {
+    public void backToMain(ActionEvent e) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("../views/menu.fxml"));
         Node source = (Node) e.getSource();
         Scene theScene = source.getScene();

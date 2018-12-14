@@ -67,7 +67,7 @@
                   <Font name="Avenir Next Heavy" size="28.0" />
                </font>
             </Label>
-            <Button layoutX="539.0" layoutY="619.0" mnemonicParsing="false" onAction="#backToMainB" prefHeight="43.0" prefWidth="153.0" text="Main Menu">
+            <Button layoutX="539.0" layoutY="619.0" mnemonicParsing="false" onAction="#backToMain" prefHeight="43.0" prefWidth="153.0" text="Main Menu">
                <font>
                   <Font name="Avenir Next Heavy" size="16.0" />
                </font>

@@ -2,7 +2,6 @@ package models;
 
 
 
-import controllers.SoundController;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.Parent;
@@ -21,7 +20,7 @@ public class Main extends Application {
         theStage.setTitle( "Pacman" );
         theStage.setScene(new Scene (root,1225, 720));
 
-        SoundController pacSound = new SoundController();
+        SoundManager pacSound = new SoundManager();
         pacSound.playPacIntro();
 
         theStage.show();

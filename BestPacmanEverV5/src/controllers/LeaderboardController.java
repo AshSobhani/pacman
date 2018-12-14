@@ -20,7 +20,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class LeaderboardController {
+public class LeaderboardController implements ControllerInterface {
     @FXML GridPane theBoard;
 
     /**
@@ -59,7 +59,7 @@ public class LeaderboardController {
     }
 
     /**
-     * This method is the original backToMain method that is triggared by the mouse in the menu screens
+     * This method is the original backToMainK method that is triggared by the mouse in the menu screens
      * @param e This is an action event waiting for input by the user to run this method
      * @throws IOException Incase of an error it handles it
      */
