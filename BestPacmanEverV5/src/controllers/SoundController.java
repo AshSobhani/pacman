@@ -13,7 +13,7 @@ public class SoundController {
     private Clip pacChomp;
     private Clip pacDeath;
 
-    SoundController() {
+    public SoundController() {
         try {
             pacIntro = AudioSystem.getClip();
             pacIntro.open(AudioSystem.getAudioInputStream(new File("BestPacmanEverV5/src/resources/sounds/pacIntro.wav")));

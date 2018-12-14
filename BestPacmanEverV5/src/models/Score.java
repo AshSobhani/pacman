@@ -1,4 +1,4 @@
-package controllers;
+package models;
 
 
 
@@ -6,13 +6,14 @@ import javafx.scene.Group;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
+import models.BarObstacle;
 
 public class Score {
 
     public Text score;
     public Text lifes;
 
-    Score(Group root) {
+    public Score(Group root) {
         this.score = new Text(BarObstacle.THICKNESS * 4, BarObstacle.THICKNESS * 28, "Score: 0");
         this.lifes = new Text(BarObstacle.THICKNESS * 20, BarObstacle.THICKNESS * 28,"Lifes: 3");
         score.setFill(Color.MAGENTA);

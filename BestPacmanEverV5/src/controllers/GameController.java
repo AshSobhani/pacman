@@ -9,9 +9,10 @@ import javafx.scene.Parent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.ColorPicker;
 import javafx.scene.Group;
-import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.paint.Color;
+import models.BarObstacle;
+import models.GameManager;
 import sprites.Cookie;
 
 public class GameController {

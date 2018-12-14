@@ -2,8 +2,8 @@ package sprites;
 
 
 
-import controllers.GameManager;
-import controllers.Maze;
+import models.GameManager;
+import models.Maze;
 import javafx.animation.AnimationTimer;
 import javafx.scene.image.Image;
 import javafx.scene.paint.ImagePattern;

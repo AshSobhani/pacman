@@ -1,7 +1,8 @@
-package controllers;
+package models;
 
 
 
+import controllers.SoundController;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.Parent;

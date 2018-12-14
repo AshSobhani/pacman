@@ -1,16 +1,17 @@
-package controllers;
+package models;
 
 
 
+import controllers.GameController;
+import controllers.LeaderboardController;
+import controllers.SoundController;
 import javafx.animation.AnimationTimer;
-import javafx.event.ActionEvent;
 import javafx.scene.Group;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
-import javafx.stage.Stage;
 import sprites.Cookie;
 import sprites.Ghost;
 import sprites.Pacman;
@@ -31,16 +32,16 @@ public class GameManager {
     private int cookiesEaten;
     private String map;
     private SoundController pacSound;
-    private ScoreController scoreCon;
+    private LeaderboardController scoreCon;
     private GameController game;
 
     /**
      * Constructor
      */
-    GameManager(Group root, String map) {
+    public GameManager(Group root, String map) {
         this.pacSound = new SoundController();
         this.game = new GameController();
-        this.scoreCon = new ScoreController();
+        this.scoreCon = new LeaderboardController();
         this.root = root;
         this.maze = new Maze(this);
         this.pacman = new Pacman(2.5 * BarObstacle.THICKNESS, 2.5 * BarObstacle.THICKNESS);
@@ -92,7 +93,7 @@ public class GameManager {
         endGame.setFont(Font.font("Avenir Next Heavy", 30));
         endGame.setFill(Color.ROYALBLUE);
 
-//        scoreCon.setScore(this.score);
+        scoreCon.getScore(score);
         root.getChildren().remove(this.scoreBoard.score);
         root.getChildren().remove(this.scoreBoard.lifes);
         root.getChildren().add(endGame);
@@ -116,6 +117,10 @@ public class GameManager {
         }
         if (event.getCode() == KeyCode.SPACE && gameEnded) {
             try {
+                root.getChildren().clear();
+                maze.getCookies().clear();
+                maze.getGhosts().clear();
+                gameEnded = true;
                 game.backToMain(event);
             } catch (Exception Failed) {
                 System.out.print("Failed To Load Menu");
