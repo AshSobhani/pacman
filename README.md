@@ -1,2 +1,1 @@
-Test Push
-Check Repository Is Working Correctly
+Before Running - Change Resources Folder To Resource Type

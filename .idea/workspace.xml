@@ -1,0 +1,1479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5482c83c-f054-4b42-a6a0-8115e7dcd72e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/BestPacmanEverV5/classDiagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BestPacmanEverV5/src/resources/scores/cScores" beforeDir="false" afterPath="$PROJECT_DIR$/BestPacmanEverV5/src/resources/scores/cScores" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BestPacmanEverV5/resources/scores/cScores" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BestPacmanEverV5/resources/scores/cScores" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BestPacmanEverV5/scores/cScores" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BestPacmanEverV5/scores/cScores" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="15676454">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="16" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.7" value="3" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="16" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="BarObstacle" value="1" />
+          <entry key="JAVA/" value="2" />
+          <entry key="JAVA/controllers" value="2" />
+          <entry key="JavaScript-modules-diagram//Users/ashsobhani/Documents/University/Work/Y2T1/G52SWM/CW2/g52swm_cw2/BestPacmanEverV5/src/controllers" value="1" />
+          <entry key="Untitled-1" value="1" />
+          <entry key="cScores" value="9" />
+          <entry key="fxml" value="99" />
+          <entry key="gif" value="6" />
+          <entry key="html" value="4" />
+          <entry key="iml" value="1" />
+          <entry key="java" value="303" />
+          <entry key="md" value="1" />
+          <entry key="png" value="11" />
+          <entry key="txt" value="41" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="4" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="Image" value="17" />
+          <entry key="JAVA" value="303" />
+          <entry key="Markdown" value="1" />
+          <entry key="PLAIN_TEXT" value="51" />
+          <entry key="UML" value="6" />
+          <entry key="XML" value="99" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cScores" value="65" />
+          <entry key="dummy" value="109" />
+          <entry key="fxml" value="739" />
+          <entry key="java" value="18059" />
+          <entry key="txt" value="1917" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="18059" />
+          <entry key="PLAIN_TEXT" value="2091" />
+          <entry key="XML" value="739" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/resources/maps/classicMap.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/sprites/Ghost.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2475">
+              <caret line="174" column="9" selection-start-line="174" selection-start-column="9" selection-end-line="174" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/sprites/Pacman.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/sprites/Cookie.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/controllers/ControllerInterface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/controllers/GameController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="17" column="59" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/controllers/LeaderboardController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="22" column="66" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/controllers/UserScoreController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="16" column="64" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/views/menu.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="530">
+              <caret line="52" column="95" selection-start-line="52" selection-start-column="95" selection-end-line="52" selection-end-column="95" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/models/Maze.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1215">
+              <caret line="94" column="47" selection-start-line="94" selection-start-column="47" selection-end-line="94" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>colo</find>
+      <find>scene</find>
+      <find>padding</find>
+      <find>x</find>
+      <find>ghosts</find>
+      <find>maze.cookies</find>
+      <find>Picker</find>
+      <find>move</find>
+      <find>funkyJunction</find>
+      <find>font</find>
+      <find>1230</find>
+      <find>pacman</find>
+      <find>s/g</find>
+      <find>ghost</find>
+      <find>background</find>
+      <find>&quot;:&quot;</find>
+      <find>functio</find>
+      <find>function</find>
+      <find>fun</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>+</replace>
+      <replace>*</replace>
+      <replace>@</replace>
+      <replace>maze.getCookies()</replace>
+      <replace>swirleyLane</replace>
+      <replace>twistedRoads</replace>
+      <replace>s/images/g</replace>
+      <replace>&quot;_&quot;</replace>
+      <replace>method</replace>
+      <replace>:</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/controller/Pacman.java" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/resources/maps/Level1.txt" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/controller/sample.fxml" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/controller/leaderboard.fxml" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/controller/Score.java" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/resources/maps/classicMap.txt" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/resources/maps/funkyJunction.txt" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/resources/maps/swirleyLane.txt" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/resources/maps/twistedRoads.txt" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/resources/maps/loopyAvenue.txt" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/controller/customGame.fxml" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/controller/Maze.java" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/controller/menu.fxml" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/controller/GameManager.java" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/controller/Main.java" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/views/menu.fxml" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/controller/BarObstacle.java" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/controller/Controller.java" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/controllers/soundController.java" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/controllers/gameController.java" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/controllers/Main.java" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/views/playerName.fxml" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/views/userName.fxml" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/controllers/BarObstacle.java" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/controllers/Maze.java" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/controllers/ScoreController.java" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/views/userInput.fxml" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/controllers/GameManager.java" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/controllers/LeaderBoardController.java" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/controllers/Score.java" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/controllers/LeaderboardController1.java" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/resources/scores/cScores" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/views/newUserScore.fxml" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/views/leaderboard.fxml" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/models/BarObstacle.java" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/models/Score.java" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/sprites/Cookie.java" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/sprites/Pacman.java" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/views/customGame.fxml" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/controllers/SoundController.java" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/models/Main.java" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/models/sortLeaderboard.java" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/sprites/Ghost.java" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/models/GameManager.java" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/models/Maze.java" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/controllers/ControllerInterface.java" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/controllers/LeaderboardController.java" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/controllers/UserScoreController.java" />
+        <option value="$PROJECT_DIR$/BestPacmanEverV5/src/controllers/GameController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="g52swm_cw2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BestPacmanEverV5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="g52swm_cw2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BestPacmanEverV5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="g52swm_cw2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BestPacmanEverV5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="g52swm_cw2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BestPacmanEverV5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="g52swm_cw2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BestPacmanEverV5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="g52swm_cw2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BestPacmanEverV5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="g52swm_cw2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BestPacmanEverV5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="maps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="g52swm_cw2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BestPacmanEverV5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="scores" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="g52swm_cw2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BestPacmanEverV5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="sounds" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="g52swm_cw2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BestPacmanEverV5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sprites" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="g52swm_cw2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BestPacmanEverV5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544794304722" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/BestPacmanEverV5/src/resources/sounds" />
+      <recent name="$PROJECT_DIR$/BestPacmanEverV5/src/views" />
+      <recent name="$PROJECT_DIR$/BestPacmanEverV5/src/resources/images" />
+      <recent name="$PROJECT_DIR$/BestPacmanEverV5/src" />
+      <recent name="$PROJECT_DIR$/BestPacmanEverV5" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="controllers" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/BestPacmanEverV5/src/views" />
+      <recent name="$PROJECT_DIR$/BestPacmanEverV5/src/resources" />
+      <recent name="$PROJECT_DIR$/BestPacmanEverV5/src/resources/maps" />
+      <recent name="$PROJECT_DIR$/BestPacmanEverV5/src/controller" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="models.Main" />
+      <module name="BestPacmanEverV5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sprites.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5482c83c-f054-4b42-a6a0-8115e7dcd72e" name="Default Changelist" comment="" />
+      <created>1543928780214</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1543928780214</updated>
+      <workItem from="1543928782662" duration="101000" />
+      <workItem from="1543929124695" duration="427000" />
+      <workItem from="1544136965573" duration="1966000" />
+      <workItem from="1544142037961" duration="20268000" />
+      <workItem from="1544532713009" duration="33842000" />
+      <workItem from="1544661646941" duration="14195000" />
+      <workItem from="1544678625066" duration="131000" />
+      <workItem from="1544678769505" duration="247000" />
+      <workItem from="1544679045400" duration="3155000" />
+      <workItem from="1544703234611" duration="68611000" />
+      <workItem from="1544785219339" duration="8418000" />
+      <workItem from="1544794435906" duration="592000" />
+      <workItem from="1545142995116" duration="100000" />
+      <workItem from="1545240704554" duration="100000" />
+      <workItem from="1545775299019" duration="367000" />
+      <workItem from="1549980724802" duration="79000" />
+    </task>
+    <task id="LOCAL-00001" summary="Added Ghost Images (Different Colours)">
+      <created>1544149305946</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1544149305946</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Changed Cookie Size &amp; Colour.&#10;Changed Background Colour &amp; Ghost Width">
+      <created>1544149940388</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1544149940388</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Loading Custom Maze From File">
+      <created>1544211350718</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1544211350718</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Created Menu, Custom Game &amp; Leaderboard Scenes (No Functionality Yet)">
+      <created>1544631966899</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1544631966900</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Implemented Custom Game Functionality, Portal Implementation &amp; Font Settings (In Game)">
+      <created>1544646044119</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1544646044120</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Improved UI, Created Return To Menu, Custom Game Functionality Complete, All Maps Made (Tested)">
+      <created>1544703437402</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1544703437402</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Changed PacMan start locations by implementing read PacMan location from file&#10;Implemented Constant moving direction PacMan until an obstacle is hit or user changes direction">
+      <created>1544704065137</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1544704065137</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Implemented Constant moving direction PacMan until an obstacle is hit or user changes direction">
+      <created>1544704214898</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1544704214898</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added set Cookie Colour Feature for the Custom Game">
+      <created>1544717992145</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1544717992145</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Implemented Game Sounds (soundManager Class) &amp; Return To Menu After End Game">
+      <created>1544725889040</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1544725889040</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Ghosts now reset on &quot;Life Lost&quot; &amp; Animated Sprites Implemented">
+      <created>1544739557652</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1544739557652</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Refactored Files &amp; Code, Created Leaderboard Controller (Read &amp; Write Files)">
+      <created>1544754167352</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1544754167352</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Done More Refactoring And Fully Implemented Leaderboard (With Names &amp; Sorting)">
+      <created>1544781458820</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1544781458820</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Commenting Through Functions">
+      <created>1544783063950</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1544783063950</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Commenting Methods Complete (Ready For JavaDocs)">
+      <created>1544784778363</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1544784778363</updated>
+    </task>
+    <task id="LOCAL-00016" summary="All javaDocs Complete">
+      <created>1544788283873</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1544788283873</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Class Diagram Done &amp; Code Finalised">
+      <created>1544794294052</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1544794294052</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="152599000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17095852" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32771084" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.34819278" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.34819278" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32891566" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added Ghost Images (Different Colours)" />
+    <MESSAGE value="Changed Cookie Size &amp; Colour.&#10;Changed Background Colour &amp; Ghost Width" />
+    <MESSAGE value="Loading Custom Maze From File" />
+    <MESSAGE value="Created Menu, Custom Game &amp; Leaderboard Scenes (No Functionality Yet)" />
+    <MESSAGE value="Implemented Custom Game Functionality, Portal Implementation &amp; Font Settings (In Game)" />
+    <MESSAGE value="Improved UI, Created Return To Menu, Custom Game Functionality Complete, All Maps Made (Tested)" />
+    <MESSAGE value="Changed PacMan start locations by implementing read PacMan location from file&#10;Implemented Constant moving direction PacMan until an obstacle is hit or user changes direction" />
+    <MESSAGE value="Implemented Constant moving direction PacMan until an obstacle is hit or user changes direction" />
+    <MESSAGE value="Added set Cookie Colour Feature for the Custom Game" />
+    <MESSAGE value="Implemented Game Sounds (soundManager Class) &amp; Return To Menu After End Game" />
+    <MESSAGE value="Ghosts now reset on &quot;Life Lost&quot; &amp; Animated Sprites Implemented" />
+    <MESSAGE value="Refactored Files &amp; Code, Created Leaderboard Controller (Read &amp; Write Files)" />
+    <MESSAGE value="Done More Refactoring And Fully Implemented Leaderboard (With Names &amp; Sorting)" />
+    <MESSAGE value="Commenting Through Functions" />
+    <MESSAGE value="Commenting Methods Complete (Ready For JavaDocs)" />
+    <MESSAGE value="All javaDocs Complete" />
+    <MESSAGE value="Class Diagram Done &amp; Code Finalised" />
+    <option name="LAST_COMMIT_MESSAGE" value="Class Diagram Done &amp; Code Finalised" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="theBoard" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>theBoard</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/resources/maps/funkyJunction.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="37" lean-forward="true" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/resources/maps/loopyAvenue.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/resources/maps/swirleyLane.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="49" lean-forward="true" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/resources/maps/twistedRoads.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="49" lean-forward="true" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/javafx.graphics/javafx/scene/shape/Shape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="238" column="32" selection-start-line="238" selection-start-column="32" selection-end-line="238" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Untitled-1" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Exception.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Y1T2/G51PGP/Projects/Java/CW2/pgp/PGPFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="940">
+          <caret line="119" selection-start-line="119" selection-end-line="120" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/views/userName.fxml" />
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/resources/images/ghost5.gif" />
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/resources/images/ghost1.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/resources/images/ghost2.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/resources/images/ghost3.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/resources/images/ghost4.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/javafx.graphics/javafx/scene/shape/Rectangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="163" column="22" selection-start-line="163" selection-start-column="22" selection-end-line="163" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/views/userInput.fxml" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/NumberFormatException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/javafx.graphics/javafx/scene/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="8865" selection-start-line="8865" selection-end-line="8865" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/javafx.base/javafx/event/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="198" selection-start-line="198" selection-end-line="198" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="498" selection-start-line="498" selection-end-line="498" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/javafx.graphics/javafx/scene/input/KeyCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2558">
+          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/views/newUserScore.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="52" column="102" selection-start-line="52" selection-start-column="102" selection-end-line="52" selection-end-column="102" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="1785" selection-start-line="1785" selection-end-line="1785" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/resources/scores/cScores">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/views/leaderboard.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="174" selection-start-line="13" selection-start-column="174" selection-end-line="13" selection-end-column="174" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/views/customGame.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="69" column="98" selection-start-line="69" selection-start-column="98" selection-end-line="69" selection-end-column="98" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/models/Score.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="108" selection-start-line="16" selection-start-column="108" selection-end-line="16" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/models/sortLeaderboard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/javaDocs/controllers/GameController.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/javaDocs/controllers/LeaderboardController.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/javaDocs/controllers/package-frame.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/javaDocs/controllers/package-summary.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/models/SoundManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="" y="">java.applet</node>
+            <node x="" y="">jdk.incubator</node>
+            <node x="" y="">groovyjarjarantlr.LLkGrammarAnalyzer</node>
+            <node x="" y="">groovyjarjarantlr.ANTLRParser</node>
+            <node x="" y="">java.time</node>
+            <node x="" y="">org.xml</node>
+            <node x="" y="">groovyjarjarantlr.PreservingFileWriter</node>
+            <node x="" y="">groovyjarjarantlr.MismatchedCharException</node>
+            <node x="" y="">controllers.LeaderboardController</node>
+            <node x="" y="">groovyjarjarantlr.ASTFactory</node>
+            <node x="" y="">groovyjarjarantlr.ParserSharedInputState</node>
+            <node x="" y="">org.omg</node>
+            <node x="" y="">groovyjarjarcommonscli.TypeHandler</node>
+            <node x="" y="">META-INF.providers</node>
+            <node x="" y="">jdk.editpad</node>
+            <node x="" y="">javax.imageio</node>
+            <node x="" y="">javafx.concurrent</node>
+            <node x="" y="">groovyjarjarantlr.CommonToken</node>
+            <node x="" y="">groovy.test</node>
+            <node x="" y="">groovyjarjarantlr.StringLiteralElement</node>
+            <node x="" y="">groovyjarjarantlr.PythonCodeGenerator</node>
+            <node x="" y="">groovyjarjarantlr.InputBuffer</node>
+            <node x="" y="">groovyjarjarantlr.ASTIterator</node>
+            <node x="" y="">groovyjarjarantlr.ParseTree</node>
+            <node x="" y="">javafx.print</node>
+            <node x="" y="">groovyjarjarantlr.TokenStream</node>
+            <node x="" y="">groovyjarjarantlr.debug</node>
+            <node x="" y="">javafx.scene</node>
+            <node x="" y="">groovyjarjarantlr.SimpleTokenManager</node>
+            <node x="" y="">jdk.dynalink</node>
+            <node x="" y="">javax.transaction</node>
+            <node x="" y="">groovyjarjarantlr.ASTNULLType</node>
+            <node x="" y="">groovyjarjarantlr.SynPredBlock</node>
+            <node x="" y="">groovyjarjarantlr.CharScanner</node>
+            <node x="" y="">javax.xml</node>
+            <node x="" y="">groovyjarjarantlr.build</node>
+            <node x="" y="">groovyjarjarantlr.CharStreamIOException</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamRecognitionException</node>
+            <node x="" y="">sun.nio</node>
+            <node x="" y="">jdk.jfr</node>
+            <node x="" y="">groovyjarjarcommonscli.CommandLineParser</node>
+            <node x="" y="">groovyjarjarantlr.JavaCharFormatter</node>
+            <node x="" y="">sun.launcher</node>
+            <node x="" y="">models.GameManager</node>
+            <node x="" y="">org.jcp</node>
+            <node x="" y="">controllers.ControllerInterface</node>
+            <node x="" y="">groovyjarjarcommonscli.PosixParser</node>
+            <node x="" y="">java.math</node>
+            <node x="" y="">sun.text</node>
+            <node x="" y="">toolbarButtonGraphics.general</node>
+            <node x="" y="">groovy.swing</node>
+            <node x="" y="">org.graalvm</node>
+            <node x="" y="">images.toolbarButtonGraphics</node>
+            <node x="" y="">controllers.UserScoreController</node>
+            <node x="" y="">groovy.beans</node>
+            <node x="" y="">groovyjarjarantlr.ANTLRStringBuffer</node>
+            <node x="" y="">groovyjarjarantlr.actions</node>
+            <node x="" y="">jdk.security</node>
+            <node x="" y="">sun.plugin2</node>
+            <node x="" y="">groovy.model</node>
+            <node x="" y="">groovyjarjarantlr.GrammarAtom</node>
+            <node x="" y="">java.awt</node>
+            <node x="" y="">java.text</node>
+            <node x="" y="">groovyjarjarantlr.RuleEndElement</node>
+            <node x="" y="">sun.applet</node>
+            <node x="" y="">javax.print</node>
+            <node x="" y="">jdk.internal</node>
+            <node x="" y="">groovyjarjarantlr.ToolErrorHandler</node>
+            <node x="" y="">groovyjarjarantlr.DefineGrammarSymbols</node>
+            <node x="" y="">sun.swing</node>
+            <node x="" y="">groovyjarjarantlr.TreeParserSharedInputState</node>
+            <node x="" y="">java.rmi</node>
+            <node x="" y="">groovyjarjarantlr.StringLiteralSymbol</node>
+            <node x="" y="">groovyjarjarantlr.ASdebug</node>
+            <node x="" y="">java.beans</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamIOException</node>
+            <node x="" y="">groovyjarjarantlr.DefaultToolErrorHandler</node>
+            <node x="" y="">javax.sql</node>
+            <node x="" y="">org.codehaus</node>
+            <node x="" y="">groovyjarjarantlr.CharFormatter</node>
+            <node x="" y="">groovyjarjarantlr.Grammar</node>
+            <node x="" y="">groovyjarjarantlr.PythonCharFormatter</node>
+            <node x="" y="">groovy.json</node>
+            <node x="" y="">groovyjarjarantlr.ANTLRError</node>
+            <node x="" y="">java.net</node>
+            <node x="" y="">javax.lang</node>
+            <node x="" y="">groovyjarjarantlr.TokenWithIndex</node>
+            <node x="" y="">groovyjarjarantlr.FileCopyException</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamRewriteEngine</node>
+            <node x="" y="">sun.misc</node>
+            <node x="" y="">groovyjarjarantlr.Token</node>
+            <node x="" y="">javafx.util</node>
+            <node x="" y="">groovyjarjarantlr.Version</node>
+            <node x="" y="">groovy.xml</node>
+            <node x="" y="">jdk.javadoc</node>
+            <node x="" y="">groovyjarjarantlr.TokenSymbol</node>
+            <node x="" y="">groovyjarjarantlr.ANTLRTokdefParserTokenTypes</node>
+            <node x="" y="">groovyjarjarantlr.collections</node>
+            <node x="" y="">com.oracle</node>
+            <node x="" y="">groovyjarjarantlr.HTMLCodeGenerator</node>
+            <node x="" y="">javafx.application</node>
+            <node x="" y="">groovyjarjarcommonscli.MissingOptionException</node>
+            <node x="" y="">groovyjarjarcommonscli.OptionGroup</node>
+            <node x="" y="">javafx.fxml</node>
+            <node x="" y="">javax.net</node>
+            <node x="" y="">sun.plugin</node>
+            <node x="" y="">groovyjarjarcommonscli.MissingArgumentException</node>
+            <node x="" y="">org.apache</node>
+            <node x="" y="">groovyjarjarantlr.AlternativeElement</node>
+            <node x="" y="">groovy.security</node>
+            <node x="" y="">groovy.io</node>
+            <node x="" y="">groovyjarjarantlr.LexerGrammar</node>
+            <node x="" y="">javax.smartcardio</node>
+            <node x="" y="">sun.jvm</node>
+            <node x="" y="">groovy.transform</node>
+            <node x="" y="">javax.security</node>
+            <node x="" y="">javafx.animation</node>
+            <node x="" y="">groovyjarjarantlr.TreeBlockContext</node>
+            <node x="" y="">groovyjarjarantlr.StringUtils</node>
+            <node x="" y="">javax.rmi</node>
+            <node x="" y="">javax.naming</node>
+            <node x="" y="">models.Score</node>
+            <node x="" y="">groovyjarjarantlr.DiagnosticCodeGenerator</node>
+            <node x="" y="">groovyjarjarantlr.CSharpCodeGenerator</node>
+            <node x="" y="">groovy.servlet</node>
+            <node x="" y="">javafx.geometry</node>
+            <node x="" y="">com.sun</node>
+            <node x="" y="">groovyjarjarantlr.LLkAnalyzer</node>
+            <node x="" y="">groovyjarjarantlr.TreeElement</node>
+            <node x="" y="">groovyjarjarantlr.NameSpace</node>
+            <node x="" y="">javax.sound</node>
+            <node x="" y="">models.SoundManager</node>
+            <node x="" y="">jdk.nio</node>
+            <node x="" y="">groovyjarjarantlr.ASTPair</node>
+            <node x="" y="">jdk.xml</node>
+            <node x="" y="">groovyjarjarantlr.CharBuffer</node>
+            <node x="" y="">groovyjarjarasm.asm</node>
+            <node x="" y="">groovyjarjarantlr.NoViableAltForCharException</node>
+            <node x="" y="">groovyjarjarantlr.ParserGrammar</node>
+            <node x="" y="">groovyjarjarantlr.ImportVocabTokenManager</node>
+            <node x="" y="">groovyjarjarantlr.BaseAST</node>
+            <node x="" y="">groovyjarjarantlr.CppCharFormatter</node>
+            <node x="" y="">groovy.time</node>
+            <node x="" y="">groovyjarjarcommonscli.OptionBuilder</node>
+            <node x="" y="">groovyjarjarantlr.Lookahead</node>
+            <node x="" y="">groovyjarjarantlr.CommonASTWithHiddenTokens</node>
+            <node x="" y="">sun.print</node>
+            <node x="" y="">groovyjarjarantlr.BlockWithImpliedExitPath</node>
+            <node x="" y="">groovyjarjarantlr.TreeWalkerGrammar</node>
+            <node x="" y="">javax.jnlp</node>
+            <node x="" y="">org.ietf</node>
+            <node x="" y="">javax.swing</node>
+            <node x="" y="">groovyjarjarantlr.ANTLRHashString</node>
+            <node x="" y="">groovyjarjarantlr.BlockEndElement</node>
+            <node x="" y="">groovyjarjarantlr.CSharpNameSpace</node>
+            <node x="" y="">models.Main</node>
+            <node x="" y="">groovyjarjarantlr.ParseTreeToken</node>
+            <node x="" y="">java.nio</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamRetryException</node>
+            <node x="" y="">groovyjarjarantlr.CommonAST</node>
+            <node x="" y="">groovyjarjarantlr.ZeroOrMoreBlock</node>
+            <node x="" y="">groovyjarjarcommonscli.HelpFormatter</node>
+            <node x="" y="">groovyjarjarantlr.TokenRangeElement</node>
+            <node x="" y="">sun.tools</node>
+            <node x="" y="">groovyjarjarcommonscli.Options</node>
+            <node x="" y="">groovyjarjarantlr.ANTLRTokdefParser</node>
+            <node x="" y="">groovyjarjarantlr.TokenManager</node>
+            <node x="" y="">groovyjarjarantlr.DocBookCodeGenerator</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamRewriteEngine.InsertBeforeOp</node>
+            <node x="" y="">javax.activation</node>
+            <node x="" y="">META-INF.services</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamHiddenTokenFilter</node>
+            <node x="" y="">groovyjarjarantlr.JavaBlockFinishingInfo</node>
+            <node x="" y="">java.security</node>
+            <node x="" y="">sun.java2d</node>
+            <node x="" y="">groovy.jmx</node>
+            <node x="" y="">org.w3c</node>
+            <node x="" y="">groovyjarjarantlr.CSharpBlockFinishingInfo</node>
+            <node x="" y="">jdk.jshell</node>
+            <node x="" y="">groovyjarjarcommonscli.GroovyInternalPosixParser</node>
+            <node x="" y="">groovyjarjarantlr.RuleBlock</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamRewriteEngine.ReplaceOp</node>
+            <node x="" y="">groovyjarjarantlr.Utils</node>
+            <node x="" y="">groovy.inspect</node>
+            <node x="" y="">groovyjarjarantlr.CodeGenerator</node>
+            <node x="" y="">META-INF.licenses</node>
+            <node x="" y="">groovyjarjarantlr.TreeParser</node>
+            <node x="" y="">java.lang</node>
+            <node x="" y="">groovyjarjarantlr.GrammarSymbol</node>
+            <node x="" y="">groovy.mock</node>
+            <node x="" y="">models.Maze</node>
+            <node x="" y="">groovyjarjarantlr.PrintWriterWithSMAP</node>
+            <node x="" y="">groovyjarjarcommonscli.AlreadySelectedException</node>
+            <node x="" y="">groovyjarjarantlr.CharQueue</node>
+            <node x="" y="">apple.security</node>
+            <node x="" y="">javafx.embed</node>
+            <node x="" y="">groovyjarjarantlr.OneOrMoreBlock</node>
+            <node x="" y="">java.sql</node>
+            <node x="" y="">javax.crypto</node>
+            <node x="" y="">groovyjarjarantlr.TokenQueue</node>
+            <node x="" y="">groovyjarjarantlr.SemanticException</node>
+            <node x="" y="">groovyjarjarantlr.FileLineFormatter</node>
+            <node x="" y="">java.util</node>
+            <node x="" y="">javafx.collections</node>
+            <node x="" y="">groovyjarjarantlr.ByteBuffer</node>
+            <node x="" y="">javafx.event</node>
+            <node x="" y="">models.BarObstacle</node>
+            <node x="" y="">sun.lwawt</node>
+            <node x="" y="">groovyjarjarcommonscli.Option</node>
+            <node x="" y="">jdk.nashorn</node>
+            <node x="" y="">groovyjarjarcommonscli.ParseException</node>
+            <node x="" y="">groovyjarjarantlr.CharLiteralElement</node>
+            <node x="" y="">groovyjarjarantlr.WildcardElement</node>
+            <node x="" y="">groovy.text</node>
+            <node x="" y="">jdk.net</node>
+            <node x="" y="">groovyjarjarantlr.NoViableAltException</node>
+            <node x="" y="">groovyjarjarantlr.Tool</node>
+            <node x="" y="">groovyjarjarantlr.MismatchedTokenException</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamRewriteEngine.RewriteOperation</node>
+            <node x="" y="">groovyjarjarantlr.ActionElement</node>
+            <node x="" y="">groovyjarjarantlr.ActionTransInfo</node>
+            <node x="" y="">groovyjarjarcommonscli.CommandLine</node>
+            <node x="" y="">groovyjarjarcommonscli.OptionValidator</node>
+            <node x="" y="">groovyjarjarcommonscli.BasicParser</node>
+            <node x="" y="">sun.security</node>
+            <node x="" y="">sun.awt</node>
+            <node x="" y="">groovyjarjarantlr.JavaCodeGenerator</node>
+            <node x="" y="">jdk.packager</node>
+            <node x="" y="">groovyjarjarantlr.BlockContext</node>
+            <node x="" y="">sprites.Cookie</node>
+            <node x="" y="">groovyjarjarantlr.CSharpCharFormatter</node>
+            <node x="" y="">javax.activity</node>
+            <node x="" y="">groovyjarjarantlr.RuleSymbol</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamBasicFilter</node>
+            <node x="" y="">models.sortLeaderboard</node>
+            <node x="" y="">groovy.sql</node>
+            <node x="" y="">groovyjarjarantlr.JavaCodeGeneratorPrintWriterManager</node>
+            <node x="" y="">sun.font</node>
+            <node x="" y="">javafx.beans</node>
+            <node x="" y="">groovyjarjarantlr.ExceptionHandler</node>
+            <node x="" y="">sun.management</node>
+            <node x="" y="">jdk.tools</node>
+            <node x="" y="">com.apple</node>
+            <node x="" y="">groovyjarjarantlr.GrammarAnalyzer</node>
+            <node x="" y="">groovyjarjarantlr.ASTVisitor</node>
+            <node x="" y="">sun.invoke</node>
+            <node x="" y="">groovyjarjarantlr.TokenBuffer</node>
+            <node x="" y="">toolbarButtonGraphics.development</node>
+            <node x="" y="">javax.annotation</node>
+            <node x="" y="">javax.jws</node>
+            <node x="" y="">javax.accessibility</node>
+            <node x="" y="">javafx.css</node>
+            <node x="" y="">groovyjarjarantlr.PythonBlockFinishingInfo</node>
+            <node x="" y="">groovy.lang</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamSelector</node>
+            <node x="" y="">sun.corba</node>
+            <node x="" y="">toolbarButtonGraphics.navigation</node>
+            <node x="" y="">groovyjarjarantlr.RuleRefElement</node>
+            <node x="" y="">groovyjarjarantlr.CommonHiddenStreamToken</node>
+            <node x="" y="">toolbarButtonGraphics.text</node>
+            <node x="" y="">groovyjarjarantlr.ParseTreeRule</node>
+            <node x="" y="">sprites.Ghost</node>
+            <node x="" y="">groovyjarjarantlr.TokenRefElement</node>
+            <node x="" y="">oracle.jvm</node>
+            <node x="" y="">javafx.stage</node>
+            <node x="" y="">groovyjarjarantlr.Alternative</node>
+            <node x="" y="">sun.util</node>
+            <node x="" y="">groovyjarjarantlr.CppCodeGenerator</node>
+            <node x="" y="">groovyjarjarcommonscli.HelpFormatter.OptionComparator</node>
+            <node x="" y="">groovyjarjarantlr.DumpASTVisitor</node>
+            <node x="" y="">groovyjarjarantlr.CharStreamException</node>
+            <node x="" y="">groovyjarjarantlr.MakeGrammar</node>
+            <node x="" y="">groovy.ui</node>
+            <node x="" y="">sun.datatransfer</node>
+            <node x="" y="">groovy.grape</node>
+            <node x="" y="">groovyjarjarcommonscli.GnuParser</node>
+            <node x="" y="">groovy.util</node>
+            <node x="" y="">groovyjarjarantlr.RecognitionException</node>
+            <node x="" y="">groovyjarjarantlr.ANTLRException</node>
+            <node x="" y="">jdk.vm</node>
+            <node x="" y="">sun.reflect</node>
+            <node x="" y="">groovyjarjarantlr.preprocessor</node>
+            <node x="" y="">groovyjarjarantlr.LexerSharedInputState</node>
+            <node x="" y="">sun.jvmstat</node>
+            <node x="" y="">sun.net</node>
+            <node x="" y="">groovyjarjarantlr.Parser</node>
+            <node x="" y="">groovyjarjarantlr.AlternativeBlock</node>
+            <node x="" y="">groovyjarjarantlr.ExceptionSpec</node>
+            <node x="" y="">groovyjarjarantlr.TreeSpecifierNode</node>
+            <node x="" y="">groovyjarjarantlr.CharRangeElement</node>
+            <node x="" y="">groovyjarjarantlr.ANTLRGrammarParseBehavior</node>
+            <node x="" y="">groovyjarjarantlr.ANTLRTokdefLexer</node>
+            <node x="" y="">sun.rmi</node>
+            <node x="" y="">sun.instrument</node>
+            <node x="" y="">groovyjarjarcommonscli.UnrecognizedOptionException</node>
+            <node x="" y="">groovyjarjarantlr.GrammarElement</node>
+            <node x="" y="">groovyjarjarantlr.DefaultJavaCodeGeneratorPrintWriterManager</node>
+            <node x="" y="">netscape.javascript</node>
+            <node x="" y="">controllers.GameController</node>
+            <node x="" y="">apple.laf</node>
+            <node x="" y="">groovyjarjarcommonscli.PatternOptionBuilder</node>
+            <node x="" y="">javax.management</node>
+            <node x="" y="">javax.tools</node>
+            <node x="" y="">groovyjarjarantlr.DefaultFileLineFormatter</node>
+            <node x="" y="">javax.script</node>
+            <node x="" y="">groovyjarjarantlr.LLkParser</node>
+            <node x="" y="">jdk.management</node>
+            <node x="" y="">java.io</node>
+            <node x="" y="">groovyjarjarcommonscli.Parser</node>
+            <node x="" y="">groovyjarjarantlr.ANTLRTokenTypes</node>
+            <node x="" y="">groovyjarjarcommonscli.Util</node>
+            <node x="" y="">groovyjarjarantlr.ANTLRLexer</node>
+            <node x="" y="">sprites.Pacman</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamException</node>
+            <node x="" y="">groovyjarjarantlr.TokenStreamRewriteEngine.DeleteOp</node>
+            <node x="" y="">groovyjarjarantlr.CppBlockFinishingInfo</node>
+            <node x="" y="">sun.usagetracker</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.1" x="15782.0" y="14123.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Constructors</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram//Users/ashsobhani/Documents/University/Work/Y2T1/G52SWM/CW2/g52swm_cw2/BestPacmanEverV5/src/controllers">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/BestPacmanEverV5/src/controllers</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.5139393178948689" x="151.0" y="292.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/models.BarObstacle">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>models.BarObstacle</OriginalElement>
+          <nodes>
+            <node x="" y="">controllers.GameController</node>
+            <node x="" y="">models.SoundManager</node>
+            <node x="" y="">controllers.UserScoreController</node>
+            <node x="" y="">sprites.Ghost</node>
+            <node x="" y="">models.BarObstacle</node>
+            <node x="" y="">javafx.scene.Node</node>
+            <node x="" y="">models.Main</node>
+            <node x="" y="">models.Score</node>
+            <node x="" y="">javafx.scene.shape.Rectangle</node>
+            <node x="" y="">javafx.event.EventTarget</node>
+            <node x="" y="">sprites.Cookie</node>
+            <node x="" y="">javafx.application.Application</node>
+            <node x="" y="">java.lang.FunctionalInterface</node>
+            <node x="" y="">models.GameManager</node>
+            <node x="" y="">models.sortLeaderboard</node>
+            <node x="" y="">controllers.ControllerInterface</node>
+            <node x="" y="">models.Maze</node>
+            <node x="" y="">sprites.Pacman</node>
+            <node x="" y="">java.util.Comparator</node>
+            <node x="" y="">com.sun.javafx.beans.IDProperty</node>
+            <node x="" y="">controllers.LeaderboardController</node>
+            <node x="" y="">javafx.scene.shape.Shape</node>
+            <node x="" y="">javafx.css.Styleable</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.416968276632855" x="601.0" y="568.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/models/BarObstacle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="34" column="52" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/models/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/controllers">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>controllers</OriginalElement>
+          <nodes>
+            <node x="" y="">controllers.GameController</node>
+            <node x="" y="">models.SoundManager</node>
+            <node x="" y="">controllers.UserScoreController</node>
+            <node x="" y="">sprites.Ghost</node>
+            <node x="" y="">models.BarObstacle</node>
+            <node x="" y="">models.Main</node>
+            <node x="" y="">models.Score</node>
+            <node x="" y="">sprites.Cookie</node>
+            <node x="" y="">models.GameManager</node>
+            <node x="" y="">models.sortLeaderboard</node>
+            <node x="" y="">controllers.ControllerInterface</node>
+            <node x="" y="">models.Maze</node>
+            <node x="" y="">sprites.Pacman</node>
+            <node x="" y="">controllers.LeaderboardController</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="472.0" y="245.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/classDiagram.png" />
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/models/GameManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/resources/maps/classicMap.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/sprites/Ghost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2475">
+          <caret line="174" column="9" selection-start-line="174" selection-start-column="9" selection-end-line="174" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/sprites/Pacman.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/sprites/Cookie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/controllers/ControllerInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/controllers/GameController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="17" column="59" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/controllers/LeaderboardController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="22" column="66" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/controllers/UserScoreController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="16" column="64" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/models/Maze.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1215">
+          <caret line="94" column="47" selection-start-line="94" selection-start-column="47" selection-end-line="94" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestPacmanEverV5/src/views/menu.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="52" column="95" selection-start-line="52" selection-start-column="95" selection-end-line="52" selection-end-column="95" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>BestPacmanEverV5</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>9 (1)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
